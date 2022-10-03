@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&family=Suez+One&display=swap');
+@import "./variable";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+html {
+    height: 100%;
+    font-size: 1px;
+    
+    ::selection {
+        background-color: $main-color;
+        color: white;
+    }
+    
+    body {
+        height: 100%;
+        font-size: 16rem;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'noto sans kr', 'roboto', 'noto sans';
+        
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.wbr {
+    display: block;
+}
+
+.para {
+    margin: 0;
+}

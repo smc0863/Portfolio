@@ -1,0 +1,38 @@
+@mixin hidden {
+    font-size: 0px;
+    line-height: 0px;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+}
+
+@keyframes header-scroll {
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+
+@keyframes header-background {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+$main-color: #ef6759;
+$base-color: rgb(53, 53, 53);
+
+.em.accent-01{
+    color: $main-color;
+    font-size: 48rem;
+}

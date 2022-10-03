@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&family=Suez+One&display=swap");
+@-webkit-keyframes header-scroll {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+@keyframes header-scroll {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes header-background {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes header-background {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.em.accent-01 {
+  color: #ef6759;
+  font-size: 48rem;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  font-size: 1px;
+}
+html ::-moz-selection {
+  background-color: #ef6759;
+  color: white;
+}
+html ::selection {
+  background-color: #ef6759;
+  color: white;
+}
+html body {
+  height: 100%;
+  font-size: 16rem;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: "noto sans kr", "roboto", "noto sans";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.wbr {
+  display: block;
+}
+
+.para {
+  margin: 0;
+}
