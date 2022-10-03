@@ -1,54 +1,53 @@
 @import "./variable";
 
-#wrap{
+#wrap {
     position: relative;
     overflow-x: hidden;
 
-    #page{
+    #page {
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
 		max-width: 100%;
 
-        .page-head{
+        .page-head {
             @include hidden;
         }
     }
 }
 
 #local{
-    .local-head{
+    .local-head {
         @include hidden;
     }
 
     .local-info {
-        padding: 0 90rem;
-        height: 100vh;
+        padding: 120rem 90rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        
         .intro-display {
             display: flex;
             flex-direction: column;
-        
+
             .intro-item {
                 display: flex;
                 align-items: center;
                 gap: 40rem;
-                
+
                 .intro-text {
                     font-family: "Suez One";
                     text-transform: capitalize;
                     font-size: 144rem;
                 }
-        
+
                 .img-wrap {
                     width: 100%;
                     height: 126rem;
                     display: block;
                     overflow: hidden;
-        
+
                     .intro-img {
                         height: 100%;
                         display: block;
@@ -57,35 +56,35 @@
                         background-position: center;
                         background-size: cover;
                         background-attachment: fixed;
-                        
+
                     }
                 }
             }
         }
-        
+
         .intro-info {
             margin-top: 100rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-        
+
             .section.ability {
                 .section-wrap {
                     .section-head {
                         @include hidden;
                     }
-        
+
                     .section-body {
                         display: flex;
                         gap: 8rem;
-        
+
                         .ability-name {
                             display: flex;
                             gap: 8rem;
                             text-transform: capitalize;
                             font-family: 'noto sans';
-                            color: $base-color;
-        
+                            color: rgb(53, 53, 53);
+
                                 &:last-child {
                                     &::before {
                                     content: '/';
@@ -98,44 +97,44 @@
             }
 
             .scroll-area {
-                .scroll-icon{
-                    .arrow-down{
+                .scroll-icon {
+                    .arrow-down {
                         font-size: 20rem;
-                        color: $base-color;
+                        color: rgb(53, 53, 53);
                         animation: header-scroll 1.6s infinite;
                     }
                 }
             }
-        
+
             .section.sns {
-                .section-wrap{
-                    .section-head{
+                .section-wrap {
+                    .section-head {
                         @include hidden;
                     }
-        
+
                     .section-body {
                         .sns-list {
                             display: flex;
                             align-items: center;
                             gap: 28rem;
-        
+
                             .sns-item {
                                 .sns-icon {
                                     width: 28rem;
                                     height: 28rem;
-        
+
                                     &.blog {
                                         background-image: url(../svg/sns_blog.svg);
                                     }
-        
+
                                     &.infl {
                                         background-image: url(../svg/sns_infl.svg);
                                     }
-        
+
                                     &.kakao {
                                         background-image: url(../svg/sns_kakao.svg);
                                     }
-        
+
                                     &.insta {
                                         background-image: url(../svg/sns_insta.svg);
                                     }
@@ -151,7 +150,7 @@
 
 #content {
     padding: 0 300rem;
-    box-sizing: border-box;
+    // box-sizing: border-box;
 
     .content-wrap {
         .content-head {
@@ -160,7 +159,7 @@
 
         .content-body {
             .section.web-publishing {
-                padding: 200rem 0;
+                padding: 140rem 0;
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
@@ -175,6 +174,7 @@
                     height: 100%;
                     width: 100vw;
                     z-index: -10;
+                    background-color: #f4f4f4;
                 }
 
                 .section-wrap {
@@ -191,9 +191,9 @@
                         &::after {
                             content: '';
                             display: block;
-                            width: 461rem;
-                            height: 103rem;
-                            background: url(/img/web_renewal.gif) no-repeat center/cover;
+                            width: 500rem;
+                            height: 100rem;
+                            background: url(/svg/section-title_1.svg) no-repeat center;
                         }
                     }
 
@@ -202,24 +202,24 @@
                             .posts-list {
                                 display: flex;
                                 flex-wrap: wrap;
-                                row-gap: 60rem;
+                                row-gap: 70rem;
                                 justify-content: space-between;
 
                                 .posts-item {
                                     .posts-wrap {
                                         display: flex;
                                         flex-direction: column;
-                                        row-gap: 30rem;
+                                        row-gap: 40rem;
 
                                         .posts-figure {
                                             overflow: hidden;
-                                            box-shadow: 0px 0px 4px #aaa;
-                                            
+                                            box-shadow: 0rem 0rem 4rem #aaa;
+
                                             .posts-thumnail {
-                                                width: 400rem;
-                                                height: auto;
+                                                width: 380rem;
+                                                height: 250rem;
                                                 transition: 0.3s ease;
-                                                
+
                                                 &:hover {
                                                     transform: scale(1.03);
                                                 }
@@ -227,6 +227,7 @@
                                                 .image {
                                                     width: 100%;
                                                     display: block;
+                                                    background-color: rgb(228, 228, 228);
                                                 }
                                             }
                                         }
@@ -238,9 +239,12 @@
                                         overflow: hidden;
 
                                         .posts-head {
-                                            font-size: 26rem;
-                                            color: $main-color;
-                                            font-weight: bold;
+                                            .posts-subject{
+                                                font-size: 26rem;
+                                                color: $main-color;
+                                                font-weight: bold;
+                                                text-transform: capitalize;
+                                            }
                                         }
 
                                         .posts-body {
@@ -250,14 +254,15 @@
                                             gap: 8rem;
 
                                             .para {
-                                                font-size: 16rem;
-                                                line-height: 26rem;
+                                                font-size: 18rem;
+                                                line-height: 28rem;
+                                                text-transform: capitalize;
                                                 color: #383838;
                                             }
 
                                             .date {
-                                                font-size: 14rem;
-                                                color: #828282;
+                                                font-size: 16rem;
+                                                color: #909090;
                                             }
                                         }
                                     }
@@ -284,7 +289,7 @@
                     flex-direction: column;
                     text-align: center;
                     row-gap: 100rem;
-                    
+
                     .section-head {
                         display: flex;
                         justify-content: center;
@@ -295,26 +300,24 @@
                             content: '';
                             display: block;
                             width: 461rem;
-                            height: 103rem;
-                            background: url(/img/graphic_design.gif) no-repeat center/cover;
+                            height: 100rem;
+                            background: url(/svg/section-title_2.svg) no-repeat center;
                         }
                     }
 
                     .section-body {
-                        overflow: hidden;
-
                         .swiper {
                             padding: 10rem 0;
 
                             .swiper-wrapper {
                                 .swiper-slide {
-                                    width: 330px;
-                                    height: 330px;
+                                    width: 330rem;
+                                    height: 330rem;
                                     overflow: hidden;
-                                    margin-left: 66px;
-                                    border-radius: 12px;
-                                    box-shadow: 0px 0px 4px #aaa;
-                                    
+                                    margin-left: 66rem;
+                                    border-radius: 12rem;
+                                    box-shadow: 0rem 0rem 4rem #aaa;
+
                                     img {
                                         width: 100%;
                                         transition: 0.3s ease;
@@ -329,6 +332,10 @@
                         .swiper-pagination {
                             position: relative;
                             margin-top: 80rem;
+
+                            .swiper-pagination-bullet-active {
+                                background-color: $main-color;
+                            }
                         }
                     }
                 }
@@ -339,45 +346,50 @@
 
 
 #page-foot {
-    padding: 0 320rem;
-    background-color: $main-color;
+    padding: 0 300rem;
+    background-color: #f4f4f4;
+    box-shadow: 0rem 0rem 2rem #aaa;
 
     .footer-wrap {
         padding: 40rem 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        color: white;
 
-        .footer-column {
-            .site-usage {
-                font-weight: 300;
-                font-size: 15rem;
-                line-height: 27rem;
-            }
+        .footer-head {
+            @include hidden;
+        }
 
-            .copyright {
-                font-weight: 300;
-                font-size: 13rem;
-                line-height: 27rem;
-                letter-spacing: 0.5rem;
-            }
+        .footer-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            color: #292929;
 
-            .privacy {
-                font-weight: 200;
-                font-size: 13rem;
-                letter-spacing: 0.5px;
-                display: flex;
-                gap: 6rem;
+            .footer-column {
+                .site-usage {
+                    font-size: 15rem;
+                    line-height: 27rem;
+                }
 
-                .privacy-name,
-                .privacy-number {
+                .copyright {
+                    font-size: 13rem;
+                    line-height: 27rem;
+                    letter-spacing: 0.5rem;
+                }
+
+                .privacy {
+                    font-size: 13rem;
+                    letter-spacing: 0.5rem;
                     display: flex;
                     gap: 6rem;
 
-                    &::after {
-                        content: '·';
-                        display: block;
+                    .privacy-name,
+                    .privacy-number {
+                        display: flex;
+                        gap: 6rem;
+
+                        &::after {
+                            content: '·';
+                            display: block;
+                        }
                     }
                 }
             }
@@ -385,45 +397,163 @@
     }
 }
 
-// .section.self-intro {
-    //     display: flex;
-    //     justify-content: center;
-    //     column-gap: 100rem;
-    //     min-height: 100vh;
-    //     position: relative;
+// media query = 1440px
+@media (max-width:1440px) {
+    #local {
+        .local-info {
+            .intro-info {
+                .section.ability {
+                    .section-wrap {
+                        .section-body {
+                            .ability-name {
+                                font-size: 14rem;
+                            }
+                        }
+                    }
+                }
+                .section.sns {
+                    .section-wrap {
+                        .section-body {
+                            .sns-list {
+                                .sns-item {
+                                    .sns-icon {
+                                        width: 26rem;
+                                        height: 26rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .intro-display {
+                .intro-item {
+                    gap: 20rem;
+                    .intro-text {
+                        font-size: 100rem;
 
-    //     &::after{
-    //         content: '';
-    //         display: block;
-    //         width: 500rem;
-    //         height: 750rem;
-    //         background: url(https://cheolis.netlify.app/img/Aboutimage.png);
-    //         background-repeat: no-repeat;
-    //         background-size: cover;
-    //         background-position: center;
-    //     }
+                    }
+                    .img-wrap {
+                        height: 100rem;
 
-    //     .section-wrap{
-    //         display: flex;
-    //         flex-direction: column;
-    //         // justify-content: center;
-    //         row-gap: 80rem;
+                    }
+                }
+            }
+        }
+    }
 
-    //         .section-head {
-    //             .section-subject{
-    //                 font-weight: 300;
-    //                 font-size: 40rem;
-    //                 line-height: 60rem;
-    //                 letter-spacing: -1rem;
-    //                 color: #383838;
-    //             }
-    //         }
-    //         .section-body{
-    //             .para{
-    //                 font-size: 19rem;
-    //                 line-height: 36rem;
-    //                 color: #575858;
-    //             }
-    //         }
-    //     }
-    // }
+    #content {
+        padding: 0 140rem;
+        .content-wrap {
+            .content-body {
+                .section.web-publishing {
+                    .section-wrap {
+                        .section-body {
+                            .posts-display {
+                                .posts-list {
+                                    justify-content: center;
+                                    row-gap: 50rem;
+                                    column-gap: 40rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #page-foot {
+        padding: 0 100rem;
+        .footer-wrap {
+            .footer-body {
+                flex-direction: column;
+                align-items: center;
+                gap: 20rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+
+// media query = 768px
+@media (max-width:768px) {
+    #local {
+        .local-info {
+            height: auto;
+            padding: 80rem 20rem;
+
+            .intro-display {
+                .intro-item {
+                    gap: 10rem;
+
+                    .intro-text {
+                        font-size: 50rem;
+
+                    }
+                    .img-wrap {
+                        height: 50rem;
+
+                    }
+                }
+            }
+
+            .intro-info {
+                margin-top: 80rem;
+                flex-direction: column;
+                row-gap: 30rem;
+
+                .scroll-area {
+                    order: 3;
+                }
+            }   
+        }
+    }
+
+    #content {
+        padding: 0;
+
+        .content-wrap {
+            .content-body {
+                .section.web-publishing {
+                    padding: 90rem 0;
+
+                }
+                .section.design {
+                    padding: 90rem 0;
+
+                }
+            }
+        }
+    }
+
+    #page-foot {
+        padding: 0;
+
+        .footer-wrap {
+            .footer-body {
+                gap: 10rem;
+
+                .footer-column {
+                    .site-usage {
+                        .para {
+                            font-size: 14rem;
+                            line-height: 24rem;
+                        }
+                    }
+                    .copyright {
+                        .para {
+                            font-size: 12rem;
+                            line-height: 24rem;
+                        }
+                    }
+                    .privacy {
+                        font-size: 12rem;
+                    }
+                }
+            }    
+        }
+    }
+}
