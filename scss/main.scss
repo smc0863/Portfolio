@@ -149,8 +149,8 @@
 }
 
 #content {
-    padding: 0 300rem;
-    // box-sizing: border-box;
+    padding: 0 320rem;
+    box-sizing: border-box;
 
     .content-wrap {
         .content-head {
@@ -158,114 +158,155 @@
         }
 
         .content-body {
-            .section.web-publishing {
-                padding: 140rem 0;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+            .section.web-port {
                 position: relative;
 
                 &::before {
                     content: '';
                     display: block;
                     position: absolute;
-                    left: calc(50% - 50vw);
-                    height: 100%;
                     width: 100vw;
-                    z-index: -10;
-                    background-color: #f4f4f4;
+                    left: calc(50% - 50vw);
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    background-color: rgb(242, 242, 242);
                 }
-
+                
                 .section-wrap {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    row-gap: 100rem;
-                    
-                    .section-head {
-                        text-indent: -9999rem;
-                        display: flex;
-                        justify-content: center;
+                    padding: 100rem 0;
 
-                        &::after {
-                            content: '';
-                            display: block;
-                            width: 500rem;
-                            height: 100rem;
-                            background: url(/svg/section-title_1.svg) no-repeat center;
+                    .section-head {
+                        .section-subject {
+                            font-family: 'Times New Roman', Times, serif;
+                            font-size: 48rem;
+                            color: #4d4d4d;
+                            text-transform: capitalize;
+                            font-weight: normal;
+                            margin-bottom: 14rem;
+                        }
+                        .section-summary {
+                            font-weight: 100;
+                            line-height: 26rem;
+                            color: #646464;
                         }
                     }
-
                     .section-body {
-                        .posts-display {
-                            .posts-list {
-                                display: flex;
-                                flex-wrap: wrap;
-                                row-gap: 70rem;
-                                justify-content: space-between;
+                        // swiper.js
+                        .swiper {
+                            width: 100%;
+                            height: 420rem;
+                            display: flex;
+                            position: relative;
+                            top: -50rem;
+                            
+                            .swiper-wrapper {
+                                order: 2;
+                                align-items: flex-end !important;
+                                gap: 58rem;
 
-                                .posts-item {
-                                    .posts-wrap {
-                                        display: flex;
-                                        flex-direction: column;
-                                        row-gap: 40rem;
+                                .swiper-slide {
+                                    width: 376rem !important;
+                                    height: auto;
+                                    
 
-                                        .posts-figure {
-                                            overflow: hidden;
-                                            box-shadow: 0rem 0rem 4rem #aaa;
+                                    .posts-display {
+                                        .posts-list {
+                                            .posts-item {
+                                                .posts-figure {
+                                                    width: 380rem;
+                                                    height: 256rem;
+                                                    border-radius: 10rem;
+                                                    overflow: hidden;
+                                                    background-color: white;
+                                                    box-shadow: 0rem 0rem 10rem #aaa;
+                                                    
+                                                    .posts-thumnail {
+                                                        .posts-image {
+                                                            display: block;
+                                                            width: 100%;
+                                                            transition: 0.2s ease-out;
 
-                                            .posts-thumnail {
-                                                width: 380rem;
-                                                height: 250rem;
-                                                transition: 0.3s ease;
-
-                                                &:hover {
-                                                    transform: scale(1.03);
+                                                            &:hover {
+                                                                transform: scale(1.03);
+                                                            }
+                                                        }
+                                                    }
                                                 }
+                                                .posts-wrap {
+                                                    text-align: right;
+                                                    margin-top: 10rem;
 
-                                                .image {
-                                                    width: 100%;
-                                                    display: block;
-                                                    background-color: rgb(228, 228, 228);
+                                                    .posts-head {
+                                                        .posts-subject {
+                                                            font-size: 18rem;
+                                                            color: #2f2f2f;
+                                                            font-weight: 500;
+
+                                                            .posts-name {
+                                                                .refer {
+                                                                    font-size: 14rem;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                    .posts-body {
+                                                        .posts-data {
+                                                            .posts-list {
+                                                                .posts-item.date {
+                                                                    .head {
+                                                                        @include hidden;
+                                                                    }
+                                                                    .body {
+                                                                        font-size: 14rem;
+                                                                        font-weight: 200;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
+                                }
+                            
+                                // .swiper-slide img {
+                                //     display: block;
+                                //     width: 100%;
+                                //     height: 100%;
+                                //     object-fit: cover;
+                                // }
+                            }
 
-                                    .posts-inform {
-                                        display: flex;
-                                        flex-direction: column;
-                                        overflow: hidden;
+                            .swiper-button-next,
+                            .swiper-button-prev {
+                                order: 1;
+                                margin: 0;
+                                width: 44rem;
+                                height: 44rem;
+                                top: 0 !important;
+                                border: 1px solid #646464;
+                                border-radius: 50%;
+                                
+                                &::after {
+                                    font-size: 16rem !important;
+                                    position: relative;
+                                    color: #646464;
+                                }
+                            }
 
-                                        .posts-head {
-                                            .posts-subject{
-                                                font-size: 26rem;
-                                                color: $main-color;
-                                                font-weight: bold;
-                                                text-transform: capitalize;
-                                            }
-                                        }
-
-                                        .posts-body {
-                                            display: flex;
-                                            flex-direction: column;
-                                            margin-top: 10rem;
-                                            gap: 8rem;
-
-                                            .para {
-                                                font-size: 18rem;
-                                                line-height: 28rem;
-                                                text-transform: capitalize;
-                                                color: #383838;
-                                            }
-
-                                            .date {
-                                                font-size: 16rem;
-                                                color: #909090;
-                                            }
-                                        }
-                                    }
+                            .swiper-button-next {
+                                right: 0;
+                                &::after {
+                                    right: -1rem;
+                                }
+                            }
+                            .swiper-button-prev {
+                                left: auto;
+                                right: 64rem;
+                                &::after {
+                                    left: -1rem;
                                 }
                             }
                         }
