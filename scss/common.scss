@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;500;700;900&family=Noto+Sans:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500&family=Suez+One&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @import "./variable", "./interaction.scss";
 
 * {
@@ -23,8 +24,25 @@ html {
         overflow-wrap: break-word;
         -webkit-text-size-adjust: none;
         -webkit-font-smoothing: antialiased;
-        font-family: 'noto sans kr', 'roboto', 'noto sans';
+        font-family: 'Pretendard', 'roboto', 'noto sans';
+        overflow-y: overlay;
         
+        &::-webkit-scrollbar {
+            width: 17rem;
+            height: 16rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8rem;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-width: 4rem;
+            border-style: solid;
+            border-color: transparent;
+            background-clip: content-box;
+            background-color: rgba(0,0,0,.3);
+        }
     }
 }
 
@@ -36,4 +54,9 @@ a {
 
 .wbr {
     display: block;
+}
+
+.para {
+    margin: 0;
+    padding: 0;
 }
