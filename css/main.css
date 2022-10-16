@@ -40,6 +40,28 @@
     transform: translateY(0px);
   }
 }
+@-webkit-keyframes arrow-right {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(6px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+@keyframes arrow-right {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(6px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
 .em.accent-01 {
   color: #ef6759;
   font-size: 48rem;
@@ -94,7 +116,7 @@
 }
 #local .local-info .intro-display .intro-item .img-wrap {
   width: 100%;
-  height: 126rem;
+  height: 140rem;
   display: block;
   overflow: hidden;
 }
@@ -349,176 +371,178 @@
   position: relative;
   left: calc(50% - 50vw);
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 14rem;
-  overflow: hidden;
-  height: 213rem;
-  position: relative;
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.gulp::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.gulp::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.gulp::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.gulp::before {
-  background-image: url(/img/gulp.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.scss::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.scss::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.scss::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.scss::before {
-  background-image: url(/img/sass.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.html::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.html::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.html::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.html::before {
-  background-image: url(/img/html.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.css::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.css::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.css::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.css::before {
-  background-image: url(/img/css.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.node::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.node::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.node::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.node::before {
-  background-image: url(/img/node.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.npm::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.npm::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.npm::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.npm::before {
-  background-image: url(/img/npm.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.js::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.js::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.js::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.js::before {
-  background-image: url(/img/js.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.git::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.git::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.git::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.git::before {
-  background-image: url(/img/git.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.excel::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.excel::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.excel::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.excel::before {
-  background-image: url(/img/excel.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.ppt::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.ppt::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.ppt::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.ppt::before {
-  background-image: url(/img/ppt.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.ps::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.ps::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.ps::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.ps::before {
-  background-image: url(/img/ps.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.ai::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.ai::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.ai::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.ai::before {
-  background-image: url(/img/ai.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.xd::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.xd::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.xd::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.xd::before {
-  background-image: url(/img/xd.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.figma::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.figma::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.figma::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.figma::before {
-  background-image: url(/img/figma.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.vscode::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.vscode::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.vscode::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.vscode::before {
-  background-image: url(/img/vscode.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.github::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.github::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.skills .swiper-slide .posts-wrap.github::before,
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper.tools .swiper-slide .posts-wrap.github::before {
-  background-image: url(/img/github.png);
-}
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper {
-  width: 100vw;
-  position: relative;
-  left: calc(50% - 50vw);
-}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide,
 #content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10rem;
+  border-radius: 16rem;
   overflow: hidden;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display {
+  width: 220rem;
   height: 220rem;
   position: relative;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap::before {
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item {
+  padding: 30rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item::before {
   content: "";
   display: block;
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
-  background-repeat: no-repeat;
+  bottom: 0;
+  width: 220rem;
+  height: 220rem;
+  z-index: 1;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item:hover::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item:hover::before {
+  z-index: -1;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.gulp::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.gulp::before {
+  background: url(/img/gulp.png);
   background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.gulp::before {
-  background-image: url(/img/gulp.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.html::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.html::before {
+  background: url(/img/html.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.scss::before {
-  background-image: url(/img/sass.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.css::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.css::before {
+  background: url(/img/css.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.html::before {
-  background-image: url(/img/html.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.js::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.js::before {
+  background: url(/img/js.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.css::before {
-  background-image: url(/img/css.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.node::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.node::before {
+  background: url(/img/node.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.node::before {
-  background-image: url(/img/node.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.npm::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.npm::before {
+  background: url(/img/npm.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.npm::before {
-  background-image: url(/img/npm.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.git::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.git::before {
+  background: url(/img/git.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.js::before {
-  background-image: url(/img/js.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.scss::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.scss::before {
+  background: url(/img/sass.png);
+  background-size: cover;
 }
-#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-wrap.git::before {
-  background-image: url(/img/git.png);
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.ps::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.ps::before {
+  background: url(/img/ps.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.ai::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.ai::before {
+  background: url(/img/ai.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.xd::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.xd::before {
+  background: url(/img/xd.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.vscode::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.vscode::before {
+  background: url(/img/vscode.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.figma::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.figma::before {
+  background: url(/img/figma.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.excel::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.excel::before {
+  background: url(/img/excel.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.ppt::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.ppt::before {
+  background: url(/img/ppt.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.github::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item.github::before {
+  background: url(/img/github.png);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8rem;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list::before,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list .posts-head .posts-subject,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list .posts-head .posts-subject {
+  font-size: 20rem;
+  font-weight: bold;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list .posts-body,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .posts-list .posts-body {
+  line-height: 24rem;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display {
+  margin-top: 54rem;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display .button-area .btn.more-view,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display .button-area .btn.more-view {
+  font-weight: 300;
+  font-size: 14rem;
+  letter-spacing: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display .button-area .btn.more-view::after,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display .button-area .btn.more-view::after {
+  content: "";
+  display: block;
+  width: 22rem;
+  height: 22rem;
+  background-image: url(/svg/arrow-right.svg);
+  background-size: cover;
+}
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.skillSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display .button-area .btn.more-view:hover::after,
+#content .content-wrap .content-body .section.skills .section-wrap .section-body .swiper.toolSwiper .swiper-wrapper .swiper-slide .posts-display .posts-item .button-display .button-area .btn.more-view:hover::after {
+  -webkit-animation: arrow-right 1s infinite;
+          animation: arrow-right 1s infinite;
 }
 
 #footer {
@@ -550,9 +574,7 @@
   line-height: 26rem;
   font-weight: 500;
 }
-#footer .section .section-wrap .section-body .para .highlight {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+40,ffff00+40,ffff00+100 */
-  background: #ffffff; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+#footer .section .section-wrap .section-body .para .highlight { /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 45%, #ffff00 45%, #ffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffff00",GradientType=0 ); /* IE6-9 */
 }

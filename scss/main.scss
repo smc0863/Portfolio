@@ -44,7 +44,7 @@
 
                 .img-wrap {
                     width: 100%;
-                    height: 126rem;
+                    height: 140rem;
                     display: block;
                     overflow: hidden;
 
@@ -360,139 +360,164 @@
                             position: relative;
                             left: calc(50% - 50vw);
 
-                            .swiper-wrapper.skills,
-                            .swiper-wrapper.tools {
-                                .swiper-slide {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    border-radius: 14rem;
-                                    overflow: hidden;
-                                    // width: 220rem;
-                                    height: 213rem;
-                                    position: relative;
-                                    
-                                    .posts-wrap {
-                                        &::before {
-                                            content: '';
-                                            display: block;
-                                            position: absolute;
-                                            top: 0;
-                                            left: 0;
-                                            bottom: 0;
-                                            right: 0;
-                                            background-repeat: no-repeat;
-                                            background-size: cover;
-                                        }
-
-                                        // skills
-                                        &.gulp::before {
-                                            background-image: url(/img/gulp.png);
-                                        }
-                                        &.scss::before {
-                                            background-image: url(/img/sass.png);
-                                        }
-                                        &.html::before {
-                                            background-image: url(/img/html.png);
-                                        }
-                                        &.css::before {
-                                            background-image: url(/img/css.png);
-                                        }
-                                        &.node::before {
-                                            background-image: url(/img/node.png);
-                                        }
-                                        &.npm::before {
-                                            background-image: url(/img/npm.png);
-                                        }
-                                        &.js::before {
-                                            background-image: url(/img/js.png);
-                                        }
-                                        &.git::before {
-                                            background-image: url(/img/git.png);
-                                        }
-                                        // tools
-                                        &.excel::before {
-                                            background-image: url(/img/excel.png);
-                                        }
-                                        &.ppt::before {
-                                            background-image: url(/img/ppt.png);
-                                        }
-                                        &.ps::before {
-                                            background-image: url(/img/ps.png);
-                                        }
-                                        &.ai::before {
-                                            background-image: url(/img/ai.png);
-                                        }
-                                        &.xd::before {
-                                            background-image: url(/img/xd.png);
-                                        }
-                                        &.figma::before {
-                                            background-image: url(/img/figma.png);
-                                        }
-                                        &.vscode::before {
-                                            background-image: url(/img/vscode.png);
-                                        }
-                                        &.github::before {
-                                            background-image: url(/img/github.png);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        
-                        .swiper.toolSwiper {
-                            width: 100vw;
-                            position: relative;
-                            left: calc(50% - 50vw);
                             .swiper-wrapper {
                                 .swiper-slide {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                    border-radius: 10rem;
+                                    border-radius: 16rem;
                                     overflow: hidden;
-                                    // width: 220rem;
-                                    height: 220rem;
-                                    position: relative;
-                                    
-                                    
-                                    .posts-wrap {
-                                        &::before {
-                                            content: '';
-                                            display: block;
-                                            position: absolute;
-                                            top: 0;
-                                            left: 0;
-                                            bottom: 0;
-                                            right: 0;
-                                            background-repeat: no-repeat;
-                                            background-size: cover;
-            
-                                        }
-            
-                                        &.gulp::before {
-                                            background-image: url(/img/gulp.png);
-                                        }
-                                        &.scss::before {
-                                            background-image: url(/img/sass.png);
-                                        }
-                                        &.html::before {
-                                            background-image: url(/img/html.png);
-                                        }
-                                        &.css::before {
-                                            background-image: url(/img/css.png);
-                                        }
-                                        &.node::before {
-                                            background-image: url(/img/node.png);
-                                        }
-                                        &.npm::before {
-                                            background-image: url(/img/npm.png);
-                                        }
-                                        &.js::before {
-                                            background-image: url(/img/js.png);
-                                        }
-                                        &.git::before {
-                                            background-image: url(/img/git.png);
+
+                                    .posts-display {
+                                        width: 220rem;
+                                        height: 220rem;
+                                        position: relative;
+
+                                        .posts-item {
+                                            padding: 30rem;
+                                            color: white;
+                                            display: flex;
+                                            flex-direction: column;
+
+                                            &::before {
+                                                content: '';
+                                                display: block;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                right: 0;
+                                                bottom: 0;
+                                                width: 220rem;
+                                                height: 220rem;
+                                                z-index: 1;
+                                            }
+
+                                            &:hover::before {
+                                                z-index: -1;
+                                            }
+
+                                            &.gulp::before {
+                                                background: url(/img/gulp.png);
+                                                background-size: cover;
+                                            }
+                                            &.html::before {
+                                                background: url(/img/html.png);
+                                                background-size: cover;
+                                            }
+                                            &.css::before {
+                                                background: url(/img/css.png);
+                                                background-size: cover;
+                                            }
+                                            &.js::before {
+                                                background: url(/img/js.png);
+                                                background-size: cover;
+                                            }
+                                            &.node::before {
+                                                background: url(/img/node.png);
+                                                background-size: cover;
+                                            }
+                                            &.npm::before {
+                                                background: url(/img/npm.png);
+                                                background-size: cover;
+                                            }
+                                            &.git::before {
+                                                background: url(/img/git.png);
+                                                background-size: cover;
+                                            }
+                                            &.scss::before {
+                                                background: url(/img/sass.png);
+                                                background-size: cover;
+                                            }
+
+                                            // tools
+                                            &.ps::before {
+                                                background: url(/img/ps.png);
+                                                background-size: cover;
+                                            }
+                                            &.ai::before {
+                                                background: url(/img/ai.png);
+                                                background-size: cover;
+                                            }
+                                            &.xd::before {
+                                                background: url(/img/xd.png);
+                                                background-size: cover;
+                                            }
+                                            &.vscode::before {
+                                                background: url(/img/vscode.png);
+                                                background-size: cover;
+                                            }
+                                            &.figma::before {
+                                                background: url(/img/figma.png);
+                                                background-size: cover;
+                                            }
+                                            &.excel::before {
+                                                background: url(/img/excel.png);
+                                                background-size: cover;
+                                            }
+                                            &.ppt::before {
+                                                background: url(/img/ppt.png);
+                                                background-size: cover;
+                                            }
+                                            &.github::before {
+                                                background: url(/img/github.png);
+                                                background-size: cover;
+                                            }
+
+                                            .posts-list {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                gap: 8rem;
+                                                
+                                                &::before {
+                                                    content: '';
+                                                    display: block;
+                                                    position: absolute;
+                                                    top: 0;
+                                                    left: 0;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    background-color: rgba(#000000, 0.6);
+                                                    z-index: -1;
+                                                }
+                                                
+                                                .posts-head {
+                                                    .posts-subject {
+                                                        font-size: 20rem;
+                                                        font-weight: bold;
+                                                    }
+                                                }
+                                                .posts-body {
+                                                    line-height: 24rem;
+                                                }
+                                            }
+                                            
+                                            .button-display {
+                                                margin-top: 54rem;
+                                                .button-area {
+                                                    .btn.more-view {
+                                                        font-weight: 300;
+                                                        font-size: 14rem;
+                                                        letter-spacing: 0.5rem;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        gap: 2rem;
+
+                                                        &::after {
+                                                            content: '';
+                                                            display: block;
+                                                            width: 22rem;
+                                                            height: 22rem;
+                                                            background-image: url(/svg/arrow-right.svg);
+                                                            background-size: cover;
+                                                        }
+                                                        
+                                                        &:hover::after {
+                                                                animation: arrow-right 1s infinite;
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -527,15 +552,12 @@
                 gap: 8rem;
                 color: #292929;
 
-
                 .para {
                     font-size: 16rem;
                     line-height: 26rem;
                     font-weight: 500;
 
                     .highlight {
-                        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+40,ffff00+40,ffff00+100 */
-                        background: #ffffff; /* Old browsers */
                         background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 45%, #ffff00 45%, #ffff00 100%); /* FF3.6-15 */
                         background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 45%,#ffff00 45%,#ffff00 100%); /* Chrome10-25,Safari5.1-6 */
                         background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 45%,#ffff00 45%,#ffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

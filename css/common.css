@@ -42,6 +42,28 @@
     transform: translateY(0px);
   }
 }
+@-webkit-keyframes arrow-right {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(6px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
+@keyframes arrow-right {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(6px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
 .em.accent-01 {
   color: #ef6759;
   font-size: 48rem;

@@ -30,6 +30,18 @@
     }
 }
 
+@keyframes arrow-right {
+    0%{
+        transform: translatex(0px);
+    }
+    50%{
+        transform: translatex(6px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+
 $main-color: #ef6759;
 
 .em.accent-01 {
