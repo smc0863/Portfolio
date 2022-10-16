@@ -4,6 +4,7 @@
     width: 1px;
     height: 1px;
     position: absolute;
+    visibility: hidden;
 }
 
 @keyframes header-scroll {
@@ -35,3 +36,5 @@ $main-color: #ef6759;
     color: $main-color;
     font-size: 48rem;
 }
+
+

@@ -158,13 +158,33 @@
         }
 
         .content-body {
+            .section-wrap {
+                padding: 100rem 0;
+                .section-head {
+                    .section-subject {
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 48rem;
+                        color: #4d4d4d;
+                        font-weight: normal;
+                    }
+
+                    .section-summary {
+                        margin-top: 14rem;
+                        font-weight: 400;
+                        line-height: 26rem;
+                        color: #646464;
+                    }
+                }
+            }
+
             .display-board {
                 margin-top: 30rem;
                 height: 300rem;
                 position: relative;
                 display: flex;
-                align-items: center;
-                justify-content: flex-end;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
 
                 &::before {
                     content: '';
@@ -186,7 +206,11 @@
                     .board-text {
                         color: white;
                         font-size: 24rem;
-                        line-height: 34rem;
+                        line-height: 38rem;
+
+                        .highlight {
+                            background-color: rgb(230, 223, 89);
+                        }
                     }
                 }
             }
@@ -195,24 +219,6 @@
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
-
-                .section-wrap {
-                    .section-head {
-                        .section-subject {
-                            font-family: 'Times New Roman', Times, serif;
-                            font-size: 48rem;
-                            color: #4d4d4d;
-                            text-transform: capitalize;
-                            font-weight: normal;
-                            margin-bottom: 14rem;
-                        }
-                        .section-summary {
-                            font-weight: 400;
-                            line-height: 26rem;
-                            color: #646464;
-                        }
-                    }
-                }
             }
 
             .section.web-port {
@@ -227,97 +233,71 @@
                     top: 0;
                     bottom: 0;
                     z-index: -1;
-                    background-color: rgb(242, 242, 242);
+                    // background-color: rgb(242, 242, 242);
                 }
                 
-                .section-wrap {
-                    padding: 100rem 0;
+                .section-body {
+                    // swiper.js
+                    .swiper {
+                        width: 100%;
+                        height: 420rem;
+                        display: flex;
+                        position: relative;
+                        top: -50rem;
+                        
+                        .swiper-wrapper {
+                            order: 2;
+                            align-items: flex-end !important;
 
-                    .section-head {
-                        .section-subject {
-                            font-family: 'Times New Roman', Times, serif;
-                            font-size: 48rem;
-                            color: #4d4d4d;
-                            text-transform: capitalize;
-                            font-weight: normal;
-                            margin-bottom: 14rem;
-                        }
-                        .section-summary {
-                            font-weight: 400;
-                            line-height: 26rem;
-                            color: #646464;
-                        }
-                    }
-                    .section-body {
-                        // swiper.js
-                        .swiper {
-                            width: 100%;
-                            height: 420rem;
-                            display: flex;
-                            position: relative;
-                            top: -50rem;
-                            
-                            .swiper-wrapper {
-                                order: 2;
-                                align-items: flex-end !important;
-                                gap: 58rem;
+                            .swiper-slide {
+                                height: auto;
+                                // background-color: red;
+                                
+                                .posts-display {
+                                    .posts-list {
+                                        .posts-item {
+                                            .posts-figure {
+                                                // width: 380rem;
+                                                height: 256rem;
+                                                border-radius: 10rem;
+                                                overflow: hidden;
+                                                background-color: white;
+                                                
+                                                .posts-thumnail {
+                                                    .posts-image {
+                                                        display: block;
+                                                        width: 100%;
+                                                        transition: 0.2s ease-out;
 
-                                .swiper-slide {
-                                    width: 376rem !important;
-                                    height: auto;
-                                    
-
-                                    .posts-display {
-                                        .posts-list {
-                                            .posts-item {
-                                                .posts-figure {
-                                                    width: 380rem;
-                                                    height: 256rem;
-                                                    border-radius: 10rem;
-                                                    overflow: hidden;
-                                                    background-color: white;
-                                                    box-shadow: 0rem 0rem 10rem #aaa;
-                                                    
-                                                    .posts-thumnail {
-                                                        .posts-image {
-                                                            display: block;
-                                                            width: 100%;
-                                                            transition: 0.2s ease-out;
-
-                                                            &:hover {
-                                                                transform: scale(1.03);
-                                                            }
+                                                        &:hover {
+                                                            transform: scale(1.03);
                                                         }
                                                     }
                                                 }
-                                                .posts-wrap {
-                                                    text-align: right;
-                                                    margin-top: 10rem;
+                                            }
+                                            .posts-wrap {
+                                                text-align: right;
+                                                margin-top: 14rem;
 
-                                                    .posts-head {
-                                                        .posts-subject {
-                                                            font-size: 18rem;
-                                                            color: #2f2f2f;
-                                                            font-weight: 500;
-
-                                                            .posts-name {
-                                                                .refer {
-                                                                    font-size: 14rem;
-                                                                }
-                                                            }
-                                                        }
+                                                .posts-head {
+                                                    .posts-subject {
+                                                        font-size: 18rem;
+                                                        color: #2f2f2f;
+                                                        font-weight: 500;   
+                                                        line-height: 28rem;
                                                     }
-                                                    .posts-body {
-                                                        .posts-data {
-                                                            .posts-list {
-                                                                .posts-item.date {
-                                                                    .head {
-                                                                        @include hidden;
-                                                                    }
-                                                                    .body {
-                                                                        font-size: 14rem;
-                                                                        font-weight: 200;
-                                                                    }
+                                                }
+                                                .posts-body {
+                                                    .posts-data {
+                                                        .posts-list {
+                                                            .posts-item.date {
+                                                                .head {
+                                                                    @include hidden;
+                                                                }
+                                                                .body {
+                                                                    font-size: 14rem;
+                                                                    font-weight: 200;
+                                                                    line-height: 24rem;
                                                                 }
                                                             }
                                                         }
@@ -327,112 +307,195 @@
                                         }
                                     }
                                 }
+                            }
+                        }
+
+                        .swiper-button-next,
+                        .swiper-button-prev {
+                            order: 1;
+                            margin: 0;
+                            width: 44rem;
+                            height: 44rem;
+                            top: 0 !important;
+                            border: 1px solid #646464;
+                            border-radius: 50%;
                             
-                                // .swiper-slide img {
-                                //     display: block;
-                                //     width: 100%;
-                                //     height: 100%;
-                                //     object-fit: cover;
-                                // }
+                            &::after {
+                                font-size: 16rem !important;
+                                position: relative;
+                                color: #646464;
                             }
+                        }
 
-                            .swiper-button-next,
-                            .swiper-button-prev {
-                                order: 1;
-                                margin: 0;
-                                width: 44rem;
-                                height: 44rem;
-                                top: 0 !important;
-                                border: 1px solid #646464;
-                                border-radius: 50%;
-                                
-                                &::after {
-                                    font-size: 16rem !important;
-                                    position: relative;
-                                    color: #646464;
-                                }
+                        .swiper-button-next {
+                            right: 0;
+                            &::after {
+                                right: -1rem;
                             }
-
-                            .swiper-button-next {
-                                right: 0;
-                                &::after {
-                                    right: -1rem;
-                                }
-                            }
-                            .swiper-button-prev {
-                                left: auto;
-                                right: 64rem;
-                                &::after {
-                                    left: -1rem;
-                                }
+                        }
+                        .swiper-button-prev {
+                            left: auto;
+                            right: 64rem;
+                            &::after {
+                                left: -1rem;
                             }
                         }
                     }
                 }
             }
 
-            .section.design {
-                width: 100vw;
-                left: 50%;
-                margin-left: -50vw;
-                position: relative;
-                padding: 160rem 0;
-                box-sizing: border-box;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
+            .section.skills {
                 .section-wrap {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    row-gap: 100rem;
-
                     .section-head {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-indent: -9999rem;
-
-                        &::after {
-                            content: '';
-                            display: block;
-                            width: 461rem;
-                            height: 100rem;
-                            background: url(/svg/section-title_2.svg) no-repeat center;
-                        }
+                        @include hidden;
                     }
-
                     .section-body {
-                        .swiper {
-                            padding: 10rem 0;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 40rem;
 
-                            .swiper-wrapper {
+                        .swiper.skillSwiper,
+                        .swiper.toolSwiper {
+                            width: 100vw;
+                            position: relative;
+                            left: calc(50% - 50vw);
+
+                            .swiper-wrapper.skills,
+                            .swiper-wrapper.tools {
                                 .swiper-slide {
-                                    width: 330rem;
-                                    height: 330rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 14rem;
                                     overflow: hidden;
-                                    margin-left: 66rem;
-                                    border-radius: 12rem;
-                                    box-shadow: 0rem 0rem 4rem #aaa;
+                                    // width: 220rem;
+                                    height: 213rem;
+                                    position: relative;
+                                    
+                                    .posts-wrap {
+                                        &::before {
+                                            content: '';
+                                            display: block;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            bottom: 0;
+                                            right: 0;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
 
-                                    img {
-                                        width: 100%;
-                                        transition: 0.3s ease;
-
-                                        &:hover {
-                                            transform: scale(102%);
+                                        // skills
+                                        &.gulp::before {
+                                            background-image: url(/img/gulp.png);
+                                        }
+                                        &.scss::before {
+                                            background-image: url(/img/sass.png);
+                                        }
+                                        &.html::before {
+                                            background-image: url(/img/html.png);
+                                        }
+                                        &.css::before {
+                                            background-image: url(/img/css.png);
+                                        }
+                                        &.node::before {
+                                            background-image: url(/img/node.png);
+                                        }
+                                        &.npm::before {
+                                            background-image: url(/img/npm.png);
+                                        }
+                                        &.js::before {
+                                            background-image: url(/img/js.png);
+                                        }
+                                        &.git::before {
+                                            background-image: url(/img/git.png);
+                                        }
+                                        // tools
+                                        &.excel::before {
+                                            background-image: url(/img/excel.png);
+                                        }
+                                        &.ppt::before {
+                                            background-image: url(/img/ppt.png);
+                                        }
+                                        &.ps::before {
+                                            background-image: url(/img/ps.png);
+                                        }
+                                        &.ai::before {
+                                            background-image: url(/img/ai.png);
+                                        }
+                                        &.xd::before {
+                                            background-image: url(/img/xd.png);
+                                        }
+                                        &.figma::before {
+                                            background-image: url(/img/figma.png);
+                                        }
+                                        &.vscode::before {
+                                            background-image: url(/img/vscode.png);
+                                        }
+                                        &.github::before {
+                                            background-image: url(/img/github.png);
                                         }
                                     }
                                 }
                             }
                         }
-                        .swiper-pagination {
+                        
+                        .swiper.toolSwiper {
+                            width: 100vw;
                             position: relative;
-                            margin-top: 80rem;
-
-                            .swiper-pagination-bullet-active {
-                                background-color: $main-color;
+                            left: calc(50% - 50vw);
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 10rem;
+                                    overflow: hidden;
+                                    // width: 220rem;
+                                    height: 220rem;
+                                    position: relative;
+                                    
+                                    
+                                    .posts-wrap {
+                                        &::before {
+                                            content: '';
+                                            display: block;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            bottom: 0;
+                                            right: 0;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+            
+                                        }
+            
+                                        &.gulp::before {
+                                            background-image: url(/img/gulp.png);
+                                        }
+                                        &.scss::before {
+                                            background-image: url(/img/sass.png);
+                                        }
+                                        &.html::before {
+                                            background-image: url(/img/html.png);
+                                        }
+                                        &.css::before {
+                                            background-image: url(/img/css.png);
+                                        }
+                                        &.node::before {
+                                            background-image: url(/img/node.png);
+                                        }
+                                        &.npm::before {
+                                            background-image: url(/img/npm.png);
+                                        }
+                                        &.js::before {
+                                            background-image: url(/img/js.png);
+                                        }
+                                        &.git::before {
+                                            background-image: url(/img/git.png);
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -443,52 +506,68 @@
 }
 
 
-#page-foot {
-    padding: 0 300rem;
-    background-color: #f4f4f4;
+#footer {
+    padding: 50rem 0;
     box-shadow: 0rem 0rem 2rem #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 14rem;
 
-    .footer-wrap {
-        padding: 40rem 0;
+    .section {
+        .section-wrap {
+            .section-head {
+                @include hidden;
+            }
+            .section-body {
+                display: flex;
+                flex-direction: column;
+                gap: 8rem;
+                color: #292929;
 
-        .footer-head {
-            @include hidden;
-        }
 
-        .footer-body {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            color: #292929;
+                .para {
+                    font-size: 16rem;
+                    line-height: 26rem;
+                    font-weight: 500;
 
-            .footer-column {
-                .site-usage {
-                    font-size: 15rem;
-                    line-height: 27rem;
+                    .highlight {
+                        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+40,ffff00+40,ffff00+100 */
+                        background: #ffffff; /* Old browsers */
+                        background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 45%, #ffff00 45%, #ffff00 100%); /* FF3.6-15 */
+                        background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 45%,#ffff00 45%,#ffff00 100%); /* Chrome10-25,Safari5.1-6 */
+                        background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 45%,#ffff00 45%,#ffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffff00',GradientType=0 ); /* IE6-9 */
+
+                    }
+                }
+                .data-list {
+                    display: flex;
+                    gap: 10rem;
+
+                    .data-item {
+                        display: flex;
+                        align-items: center;
+                        gap: 10rem;
+                        font-size: 15rem;
+
+                        &:nth-child(2) {
+                            &::before,
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 1rem;
+                                height: 80%;
+                                background-color: #aaa;
+                            }
+                        }
+                    }
                 }
 
                 .copyright {
-                    font-size: 13rem;
-                    line-height: 27rem;
-                    letter-spacing: 0.5rem;
-                }
-
-                .privacy {
-                    font-size: 13rem;
-                    letter-spacing: 0.5rem;
-                    display: flex;
-                    gap: 6rem;
-
-                    .privacy-name,
-                    .privacy-number {
-                        display: flex;
-                        gap: 6rem;
-
-                        &::after {
-                            content: '·';
-                            display: block;
-                        }
-                    }
+                    font-size: 14rem;
                 }
             }
         }
@@ -527,6 +606,7 @@
             .intro-display {
                 .intro-item {
                     gap: 20rem;
+
                     .intro-text {
                         font-size: 100rem;
 
@@ -557,18 +637,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-
-    #page-foot {
-        padding: 0 100rem;
-        .footer-wrap {
-            .footer-body {
-                flex-direction: column;
-                align-items: center;
-                gap: 20rem;
-                text-align: center;
             }
         }
     }
@@ -624,34 +692,6 @@
 
                 }
             }
-        }
-    }
-
-    #page-foot {
-        padding: 0;
-
-        .footer-wrap {
-            .footer-body {
-                gap: 10rem;
-
-                .footer-column {
-                    .site-usage {
-                        .para {
-                            font-size: 14rem;
-                            line-height: 24rem;
-                        }
-                    }
-                    .copyright {
-                        .para {
-                            font-size: 12rem;
-                            line-height: 24rem;
-                        }
-                    }
-                    .privacy {
-                        font-size: 12rem;
-                    }
-                }
-            }    
         }
     }
 }
