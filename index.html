@@ -15,7 +15,7 @@
     <title>Cheoli's Portfolio</title>
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -26,18 +26,36 @@
     <!-- css link -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
-
+    <link rel="stylesheet" href="./css/popup.css" />
 
 </head>
 <body>
-    
     <div id="wrap">
         <div id="page">
             <!-- header -->
-            <div class="page-head">
-                <h1 class="page-subject"><span class="page-name">신민철의 포트폴리오</span></h1>
+            <div class="page-head" id="header">
+                <h1 class="page-subject"><a href="#index.html" class="page-name"><img src="./img/logo.png" alt="Cheoli's Porfolio"></a></h1>
+                <!-- page-navi -->
+                <div class="page-navi">
+                    <div class="section-wrap">
+                        <div class="section-head">
+                            <h2 class="section-subject"><span class="section-name">Contents of table</span></h2>
+                        </div>
+                        <div class="section-body">
+                            <ul class="gnb-list">
+                                <li class="gnb-item"><button class="btn main">Main</button></li>
+                                <li class="gnb-item"><button class="btn intro">Intro</button></li>
+                                <li class="gnb-item"><button class="btn product">Product</button></li>
+                                <li class="gnb-item"><button class="btn graphic">Graphic</button></li>
+                                <li class="gnb-item"><button class="btn contact">Contact</button></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <!-- //page-navi -->
             </div>
             <!-- / header -->
+
             <!-- main -->
             <div class="page-body">
                 <!-- local -->
@@ -45,62 +63,6 @@
                     <div class="local-head">
                         <h2 class="local-subject"><span class="local-name">Welcome to Cheoli's Portfolio</span></h2>
                     </div>
-                    <!-- local-info -->
-                    <div class="local-info">
-                        <!-- intro-display -->
-                        <div class="intro-display">
-                            <div class="intro-item">
-                                <p class="intro-text">welcome</p>
-                                <span class="img-wrap"><span class="intro-img"></span></span>
-                                <p class="intro-text">to</p>
-                            </div>
-                            <div class="intro-item">
-                                <span class="img-wrap"><span class="intro-img"></span></span>
-                                <p class="intro-text">cheoli's</p>
-                            </div>
-                            <div class="intro-item">
-                                <p class="intro-text">portfolio</p>
-                                <span class="img-wrap"><span class="intro-img"></span></span>
-                            </div>
-                        </div>
-                        <!-- //intro-display -->
-                        <!-- intro-info -->
-                        <div class="intro-info">
-                            <div class="section ability">
-                                <div class="section-wrap">
-                                    <div class="section-head">
-                                        <p class="section-subject"><strong class="section-name">희망 직무</strong></p>
-                                    </div>
-                                    <div class="section-body">
-                                        <span class="ability-name">web designer</span>
-                                        <span class="ability-name">publisher</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="scroll-area">
-                                <div class="scroll-icon">
-                                    <i class="fa-solid fa-arrow-down arrow-down"></i>
-                                </div>
-                            </div>
-                            <div class="section sns">
-                                <div class="section-wrap">
-                                    <div class="section-head">
-                                        <p class="section-name"><strong class="section-name">sns list</strong></p>
-                                    </div>
-                                    <div class="section-body">
-                                        <ul class="sns-list">
-                                            <li class="sns-item"><a class="sns-icon blog" href="#"></a></li>
-                                            <li class="sns-item"><a class="sns-icon infl" href="#"></a></li>
-                                            <li class="sns-item"><a class="sns-icon kakao" href="#"></a></li>
-                                            <li class="sns-item"><a class="sns-icon insta" href="#"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //intro-info -->
-                    </div>
-                    <!-- //local-info -->
                     <!-- local-body -->
                     <div class="local-body">
                     <!-- content -->
@@ -110,420 +72,79 @@
                                     <h3 class="content-subject"><span class="content-name">Cheoli's Portfolio</span></h3>
                                 </div>
                                 <div class="content-body">
-                                    
-                                    <!-- section skills -->
-                                    <div class="section skills">
-                                        <div class="section-wrap">
-                                            <div class="section-head">
-                                                <h4 class="section-subject"><span class="section-name">My Skills</span></h4>
-                                            </div>
-                                            <div class="section-body">
 
-                                                <!-- Swiper skills -->
-                                                <div class="swiper skillSwiper">
-                                                    <div class="swiper-wrapper skills">
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item gulp">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Gulp</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">걸프는 Node.js 기반의 Task runner입니다.</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
+                                    <div class="display-board main" id="main">
+                                        <div class="board-wrap">
+                                            <div class="board-head">
+                                                <p class="board-subject">
+                                                    <span class="board-name">
+                                                        <span class="wbr">세상을 더 편리하게,</span>
+                                                        <span class="wbr">내일을 새롭게</span>
+                                                    </span>
+                                                </p>
+                                                <p class="board-summary">Cheoli's Porfolio</p>
+                                            </div>
+                                            <div class="board-body">
+
+                                                <div class="visual-wrap">
+                                                    <img src="./img/" alt="">
+                                                </div>
+
+                                                <!-- intro-info -->
+                                                <div class="intro-info">
+                                                    <div class="section ability">
+                                                        <div class="section-wrap">
+                                                            <div class="section-head">
+                                                                <p class="section-subject"><strong class="section-name">희망 직무</strong></p>
                                                             </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item html">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">HTML</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">문서의 구조와 서식 등을 포함하는 마크업 언어</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item css">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">CSS</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">웹 문서에 스타일을 부여하는 스타일 시트</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item js">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">JavaScript</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">객체 기반의 스크립트 프로그래밍 언어입니다.</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item node">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Node.js</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">Chrome V8 엔진으로 빌드된 JS 런타임 환경</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item npm">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Npm</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">JavaScript 런타임 환경의 패키지 관리자</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item git">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Git</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">파일의 변경사항을 추적하는 관리 시스템</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item scss">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">SCSS</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">CSS 전처리기로 코드의 가독성을 높여준다.</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="#">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="section-body">
+                                                                <span class="ability-name">web designer</span>
+                                                                <span class="ability-name">publisher</span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- //swiper-wrapper -->
-                                                </div>
-                                                <!-- //swiper -->
-
-                                                <!-- Swiper tools -->
-                                                <div class="swiper toolSwiper">
-                                                    <div class="swiper-wrapper tools">
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item ps">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Photoshop</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">픽셀을 기본 단위로 하는 비트맵 그래픽 편집 툴</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EC%96%B4%EB%8F%84%EB%B9%84_%ED%8F%AC%ED%86%A0%EC%83%B5" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                    <div class="scroll-area">
+                                                        <div class="scroll-icon">
+                                                            <i class="fa-solid fa-arrow-down arrow-down"></i>
                                                         </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item ai">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Illustrator</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">어도비에서 개발한</span>
-                                                                                <span class="wbr">벡터 드로잉 프로그램</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EC%96%B4%EB%8F%84%EB%B9%84_%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%9D%B4%ED%84%B0" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
+                                                    </div>
+                                                    <div class="section sns">
+                                                        <div class="section-wrap">
+                                                            <div class="section-head">
+                                                                <p class="section-name"><strong class="section-name">sns list</strong></p>
                                                             </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item xd">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">XD</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">User Experience 디자인 소프트웨어</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EC%96%B4%EB%8F%84%EB%B9%84_XD" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item vscode">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">VS Code</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">Microsoft에서 개발한 소스 코드 편집기</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EB%B9%84%EC%A3%BC%EC%96%BC_%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4_%EC%BD%94%EB%93%9C" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item figma">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Figma</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">인터페이스 디자인을 위한 협업 애플리케이션</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://en.wikipedia.org/wiki/Figma_(software)" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item excel">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Excel</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">Microsoft에서 개발한 스프레드시트 프로그램</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8_%EC%97%91%EC%85%80" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item ppt">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Power Point</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">Microsoft에서 개발한 프레젠테이션 프로그램</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8_%ED%8C%8C%EC%9B%8C%ED%8F%AC%EC%9D%B8%ED%8A%B8" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="swiper-slide">
-                                                            <div class="posts-display">
-                                                                <div class="posts-item github">
-                                                                    <dl class="posts-list">
-                                                                        <dt class="posts-head">
-                                                                            <p class="posts-subject"><span class="posts-name">Github</span></p>
-                                                                        </dt>
-                                                                        <dd class="posts-body">
-                                                                            <p class="para">
-                                                                                <span class="wbr">분산 버전 관리 저장소 호스팅 지원 웹 서비스</span>
-                                                                            </p>
-                                                                        </dd>
-                                                                    </dl>
-                                                                    <div class="button-display">
-                                                                        <span class="button-area">
-                                                                            <a class="btn more-view" href="https://ko.wikipedia.org/wiki/%EA%B9%83%ED%97%88%EB%B8%8C" target="_blank">More View</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="section-body">
+                                                                <ul class="sns-list">
+                                                                    <li class="sns-item"><a class="sns-icon blog" href="#"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon infl" href="#"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon kakao" href="#"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon insta" href="#"></a></li>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- //swiper-wrapper -->
                                                 </div>
-                                                <!-- //swiper tools -->
+                                                <!-- //intro-info -->
+
                                             </div>
-                                            <!-- //section-body -->
                                         </div>
-                                        <!-- //section-wrap -->
                                     </div>
-                                    <!-- //section skills -->
-                                
-                                    <!-- skills-option -->
-                                    <script>
-                                        var swiper = new Swiper(".skillSwiper", {
-                                            // 한 슬라이드에 보여주는 갯수
-                                            slidesPerView: 8,
-                                            // 슬라이드 사이 여백
-                                            spaceBetween: 30,
-                                            slidesPerGroup: 8,
-                                            loop: true,
-                                            loopFillGroupWithBlank: false,
-                                            allowTouchMove : false,
-                                            speed: 60000,
-                                            autoplay: {
-                                                // 시간 설정
-                                                delay : 0,
-                                                // false로 설정 시 스와이프 후 자동 재생이 비활성화 되지 않음
-                                                disableOnInteraction: false,
-                                            },
-                                        });
-                                    </script>
 
-                                    <script>
-                                        var swiper = new Swiper(".toolSwiper", {
-                                            // 한 슬라이드에 보여주는 갯수
-                                            slidesPerView: 8,
-                                            // 슬라이드 사이 여백
-                                            spaceBetween: 30,
-                                            slidesPerGroup: 8,
-                                            loop: true,
-                                            loopFillGroupWithBlank: false,
-                                            allowTouchMove : false,
-                                            speed: 60000,
-                                            autoplay: {
-                                                // 시간 설정
-                                                delay : 0,
-                                                // false로 설정 시 스와이프 후 자동 재생이 비활성화 되지 않음
-                                                disableOnInteraction: true,
-                                                // 방향
-                                                reverseDirection: true,
-                                            },
-                                        });
-                                    </script>
-                                    <!-- //skills-option -->
+                                    
+
+                                    <!-- display-board -->
+                                    <div class="display-board welcome">
+                                        <div class="board-body">
+                                            <p class="board-text">
+                                                <span class="wbr">저의 포트폴리오 사이트에 오신 걸 환영합니다!</span>
+                                                <span class="wbr">끊임없이 발전하는 <mark>마크업 개발자</mark> 신민철입니다.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- //display-board -->
 
                                     <!-- section-intro -->
-                                    <div class="section intro">
+                                    <div class="section intro" id="intro">
                                         <div class="section-wrap">
                                             <div class="section-head">
                                                 <h4 class="section-subject"><span class="section-name">Self-Introduce</span></h4>
@@ -533,222 +154,251 @@
                                                 </p>
                                             </div>
                                             <div class="section-body">
-                                                
+                                                <!-- subsection-ability -->
+                                                <div class="subsection ability">
+                                                    <div class="subsection-wrap">
+                                                        <div class="subsection-head">
+                                                            <h5 class="subsection-subject"><span class="subsection-name">ability</span></h5>
+                                                        </div>
+                                                        <div class="subsection-body">
+                                                            <table>
+                                                                <caption>활용 능력</caption>
+                                                                <colgroup>
+                                                                    <col style="width: 220rem;" />
+                                                                    <col style="width: 150rem;" />
+                                                                    <col />
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>활용가능 프로그램</th>
+                                                                        <th>숙련도</th>
+                                                                        <th>사용 정도</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>HTML</td>
+                                                                        <td>상</td>
+                                                                        <td>접근성 및 크로스브라우징을 고려한 웹사이트 제작 가능</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>CSS</td>
+                                                                        <td>상</td>
+                                                                        <td>레이아웃 구성 및 미디어쿼리, 애니메이션 활용 가능</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>JavaScript</td>
+                                                                        <td>중</td>
+                                                                        <td>접근성을 해치지 않는 인터랙션 활용 가능</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Photoshop</td>
+                                                                        <td>상</td>
+                                                                        <td>사진 합성 및 보정, 상세페이지 제작 가능</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Illustrator</td>
+                                                                        <td>상</td>
+                                                                        <td>패스파인더 기능을 활용한 로고 및 아이콘 제작 가능</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>XD</td>
+                                                                        <td>상</td>
+                                                                        <td>UI/UX 디자인 및 프로토타입 기능 활용 가능</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //subsection-ability -->
+
+                                                <!-- subsection-licence -->
+                                                <div class="subsection ability">
+                                                    <div class="subsection-wrap">
+                                                        <div class="subsection-head">
+                                                            <h5 class="subsection-subject"><span class="subsection-name">licence</span></h5>
+                                                        </div>
+                                                        <div class="subsection-body">
+                                                            <table>
+                                                                <caption>활용 능력</caption>
+                                                                <colgroup>
+                                                                    <col style="width: 220rem;" />
+                                                                    <col />
+                                                                    <col style="width: 130rem" />
+                                                                    <col style="width: 240rem;" />
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>취득 일자</th>
+                                                                        <th>자격증</th>
+                                                                        <th>등급</th>
+                                                                        <th>발급처</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2021. 06. 11</td>
+                                                                        <td>GTQ - Photoshop</td>
+                                                                        <td>1급</td>
+                                                                        <td>한국생산성본부</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2021. 09. 17</td>
+                                                                        <td>GTQ - Illustrator</td>
+                                                                        <td>1급</td>
+                                                                        <td>한국생산성본부</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2021. 01. 29</td>
+                                                                        <td>컴퓨터활용능력</td>
+                                                                        <td>2급</td>
+                                                                        <td>대한상공회의소</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2021. 08. 06</td>
+                                                                        <td>워드프로세서</td>
+                                                                        <td>1급</td>
+                                                                        <td>대한상공회의소</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2021. 07. 08</td>
+                                                                        <td>마케팅기획전문가</td>
+                                                                        <td>1급</td>
+                                                                        <td>한국직업능력검정협회</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>2021. 09. 06</td>
+                                                                        <td>SNS마케팅전문가</td>
+                                                                        <td>1급</td>
+                                                                        <td>한국직업능력진흥원</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //subsection-licence -->
                                             </div>
                                         </div>
                                     </div>
                                     <!-- //section-intro -->
 
-                                    <!-- display-board -->
-                                    <div class="display-board">
-                                        <div class="board-body">
-                                            <p class="board-text">
-                                                <span class="wbr">끊임없이 발전하는 <mark class="highlight">마크업 개발자</mark> 신민철입니다.</span>
-                                                <span class="wbr">여기에 뭐라고 쓸지만 찾으면 되는데 생각이 안 나요.</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- //display-board -->
-
                                     <!-- section web-port -->
-                                    <div class="section web-port">
+                                    <div class="section web-port" id="product">
                                         <div class="section-wrap">
                                             <div class="section-head">
                                                 <h4 class="section-subject"><span class="section-name">Design / Publishing</span></h4>
                                                 <p class="section-summary">
-                                                    <span class="wbr">적절한 텍스트를 찾지 못해 고민중인 부분입니다. 이정도의 길이는</span>
-                                                    <span class="wbr">나와야 하는데 이게 뭐라고 한참을 붙잡고 있습니다. 누가 좀 도와주세요!</span>
+                                                    <span class="wbr">웹 표준 및 접근성을 고려한 마크업으로 퍼블리싱 작업을 진행했으며,</span>
+                                                    <span class="wbr">직접 디자인한 웹 사이트와 반응형 웹 사이트를 포함하고 있습니다.</span>
                                                 </p>
                                             </div>
                                             <div class="section-body">
+
                                                 <!-- Swiper -->
-                                                <div class="swiper webSwiper">
-                                                    <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <!-- posts-list -->
-                                                        <div class="posts-display">
-                                                            <div class="posts-list">
-                                                                <div class="posts-item">
-                                                                    <div class="posts-figure">
-                                                                        <a class="posts-thumnail" href="">
-                                                                            <img class="posts-image" src="/img/landing.jpg" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="posts-wrap">
-                                                                        <div class="posts-head">
-                                                                            <h5 class="posts-subject"><span class="posts-name">배달의민족 랜딩페이지</span></h5>
-                                                                        </div>
-                                                                        <div class="posts-body">
-                                                                            <div class="posts-data">
-                                                                                <p class="posts-list">
-                                                                                    <span class="posts-item date">
-                                                                                        <span class="head">Date</span>
-                                                                                        <span class="body">2022.06.28</span>
-                                                                                    </span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
+                                                <div class="posts-display swiper webSwiper">
+                                                    <div class="posts-list swiper-wrapper">
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://bemin-landing.netlify.app">
+                                                                    <img class="posts-image" src="./img/thum_worldvision.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">Worild Vision</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.06.28</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- //posts-list -->
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <!-- posts-list -->
-                                                        <div class="posts-display">
-                                                            <div class="posts-list">
-                                                                <div class="posts-item">
-                                                                    <div class="posts-figure">
-                                                                        <a class="posts-thumnail" href="">
-                                                                            <img class="posts-image" src="/img/glamshell.jpg" alt="" />
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="posts-wrap">
-                                                                        <div class="posts-head">
-                                                                            <h5 class="posts-subject"><span class="posts-name">Glamshell 홈페이지</span></h5>
-                                                                        </div>
-                                                                        <div class="posts-body">
-                                                                            <div class="posts-data">
-                                                                                <p class="posts-list">
-                                                                                    <span class="posts-item date">
-                                                                                        <span class="head">Date</span>
-                                                                                        <span class="body">2022.06.28</span>
-                                                                                    </span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://bemin-landing.netlify.app">
+                                                                    <img class="posts-image" src="/img/thum_landing.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">배달의민족 랜딩페이지</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.06.28</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- //posts-list -->
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <!-- posts-list -->
-                                                        <div class="posts-display">
-                                                            <div class="posts-list">
-                                                                <div class="posts-item">
-                                                                    <div class="posts-figure">
-                                                                        <a class="posts-thumnail" href="">
-                                                                            <img class="posts-image" src="/img/Math.jpg" alt="" />
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="posts-wrap">
-                                                                        <div class="posts-head">
-                                                                            <h5 class="posts-subject"><span class="posts-name">이상한 나라의 수학자</span></h5>
-                                                                        </div>
-                                                                        <div class="posts-body">
-                                                                            <div class="posts-data">
-                                                                                <p class="posts-list">
-                                                                                    <span class="posts-item date">
-                                                                                        <span class="head">Date</span>
-                                                                                        <span class="body">2022.06.28</span>
-                                                                                    </span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://glamshell.netlify.app">
+                                                                    <img class="posts-image" src="./img/thum_glamshell.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">글램쉘 (Glamshell)</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.06.28</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- //posts-list -->
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <!-- posts-list -->
-                                                        <div class="posts-display">
-                                                            <div class="posts-list">
-                                                                <div class="posts-item">
-                                                                    <div class="posts-figure">
-                                                                        <a class="posts-thumnail" href="">
-                                                                            <img class="posts-image" src="/img/kakaotalk.jpg" alt="" />
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="posts-wrap">
-                                                                        <div class="posts-head">
-                                                                            <h5 class="posts-subject"><span class="posts-name">KakaoTalk Clone</span></h5>
-                                                                        </div>
-                                                                        <div class="posts-body">
-                                                                            <div class="posts-data">
-                                                                                <p class="posts-list">
-                                                                                    <span class="posts-item date">
-                                                                                        <span class="head">Date</span>
-                                                                                        <span class="body">2022.06.28</span>
-                                                                                    </span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://korea-movie-site.netlify.app/">
+                                                                    <img class="posts-image" src="./img/thum_math.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">이상한 나라의 수학자</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.06.28</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- //posts-list -->
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <!-- posts-list -->
-                                                        <div class="posts-display">
-                                                            <div class="posts-list">
-                                                                <div class="posts-item">
-                                                                    <div class="posts-figure">
-                                                                        <a class="posts-thumnail" href="">
-                                                                            <img class="posts-image" src="/img/landing.jpg" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="posts-wrap">
-                                                                        <div class="posts-head">
-                                                                            <h5 class="posts-subject"><span class="posts-name">World Vision</span></h5>
-                                                                        </div>
-                                                                        <div class="posts-body">
-                                                                            <div class="posts-data">
-                                                                                <p class="posts-list">
-                                                                                    <span class="posts-item date">
-                                                                                        <span class="head">Date</span>
-                                                                                        <span class="body">2022.06.28</span>
-                                                                                    </span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://kakaotalk-clone.netlify.app">
+                                                                    <img class="posts-image" src="./img/kakaotalk.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">카카오톡 Mobile Ver.</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.06.28</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- //posts-list -->
                                                     </div>
-                                                    <div class="swiper-slide">
-                                                        <!-- posts-list -->
-                                                        <div class="posts-display">
-                                                            <div class="posts-list">
-                                                                <div class="posts-item">
-                                                                    <div class="posts-figure">
-                                                                        <a class="posts-thumnail" href="">
-                                                                            <img class="posts-image" src="/img/landing.jpg" alt="">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="posts-wrap">
-                                                                        <div class="posts-head">
-                                                                            <h5 class="posts-subject"><span class="posts-name">배달의민족</span></h5>
-                                                                        </div>
-                                                                        <div class="posts-body">
-                                                                            <div class="posts-data">
-                                                                                <p class="posts-list">
-                                                                                    <span class="posts-item date">
-                                                                                        <span class="head">Date</span>
-                                                                                        <span class="body">2022.06.28</span>
-                                                                                    </span>
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- //posts-list -->
-                                                    </div>
-                                                    </div>
-                                                    <div class="swiper-button-next"></div>
-                                                    <div class="swiper-button-prev"></div>
                                                 </div>
 
+                                                <div class="button-display">
+                                                    <span class="button-area">
+                                                        <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div>
+                                                    </span>
+                                                </div>
+                                                
                                                 <!-- Initialize Swiper -->
                                                 <script>
                                                 var swiper = new Swiper(".webSwiper", {
@@ -764,6 +414,24 @@
                                                     nextEl: ".swiper-button-next",
                                                     prevEl: ".swiper-button-prev",
                                                     },
+
+                                                    breakpoints: {
+                                                            768: {
+                                                                slidesPerView: 2,
+                                                                spaceBetween: 40,
+                                                            },
+
+                                                            1024: {
+                                                                slidesPerView: 3,
+                                                                spaceBetween: 40,
+                                                            }, 
+
+                                                            1640: {
+                                                                slidesPerView: 3,
+                                                                spaceBetween: 60,
+                                                            }
+                                                        }
+                                                        
                                                 });
                                                 </script>
 
@@ -771,6 +439,94 @@
                                         </div>
                                     </div>
                                     <!-- //section web-port -->
+
+                                    <!-- section-design -->
+                                    <div class="section design" id="graphic">
+                                        <div class="section-wrap">
+                                            <div class="section-head">
+                                                <h4 class="section-subject"><span class="section-name">Graphic Design</span></h4>
+                                                <p class="section-summary">
+                                                    <span class="wbr">Illustrator, Photoshop, Lightroom 등의 툴을 사용해 작업했으며, </span>
+                                                    <span class="wbr">학기 중 과제 제출용으로 만들었던 작품들을 보완해 최종 완성하였습니다.</span>
+                                                </p>
+                                            </div>
+                                            <!-- section-body -->
+                                            <div class="section-body">
+                                                <!-- design-Swiper -->
+                                                <div class="posts-display designSwiper swiper">
+                                                    <div class="posts-list swiper-wrapper">
+                                                        <div class="posts-item swiper-slide">
+                                                            <a class="posts-wrap" href="javascript:openPop_1()">
+                                                                <div class="posts-figure">
+                                                                    <div class="posts-thumnail">
+                                                                        <img src="./img/summer_illust.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <a class="posts-wrap" href="javascript:openPop_2()">
+                                                                <div class="posts-figure">
+                                                                    <div class="posts-thumnail">
+                                                                        <img src="./img/autumn_illust.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <a class="posts-wrap" href="javascript:openPop_3()">
+                                                                <div class="posts-figure">
+                                                                    <div class="posts-thumnail">
+                                                                        <img src="./img/winter_illust.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <a class="posts-wrap" href="javascript:openPop_4()">
+                                                                <div class="posts-figure">
+                                                                    <div class="posts-thumnail">
+                                                                        <img src="./img/infograhic_1.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <a class="posts-wrap" href="javascript:openPop_5()">
+                                                                <div class="posts-figure">
+                                                                    <div class="posts-thumnail">
+                                                                        <img src="./img/Infographic_2.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <a class="posts-wrap" href="javascript:openPop_6()">
+                                                                <div class="posts-figure">
+                                                                    <div class="posts-thumnail">
+                                                                        <img src="./img/poster_1.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- //design-swiper -->
+
+                                                <script>
+                                                    var swiper = new Swiper(".designSwiper", {
+                                                        slidesPerView: 5,
+                                                        spaceBetween: 50,
+                                                        loop: true,
+                                                    });
+                                                </script>
+                                                
+                                            </div>
+                                            <!-- //section-body -->
+                                        </div>
+                                        <!-- //section-wrap -->
+                                    </div>
+                                    <!-- //section-design -->
                                 </div>
                                 <!-- //content-body -->
                             </div>
@@ -783,6 +539,8 @@
                 <!-- //local -->
             </div>
             <!-- //main -->
+
+            <!-- footer -->
             <div class="page-foot" id="footer">
                 <div class="section notice">
                     <div class="section-wrap">
@@ -815,7 +573,223 @@
                     </div>
                 </div>
             </div>
+            <!-- //footer -->
         </div>
     </div>
+
+    <!-- layer-popup -->
+    <div class="layer-popup" id="popupLayer_1">
+        <div class="popup-page-body">
+            <div class="popup-local">
+                <div class="popup-local-head">
+                    <span class="popup-title">Summer Vacation</span>
+                </div>
+                <div class="popup-local-body">
+                    <div class="content">
+                        <div class="content-body">
+                            <img src="./img/pop_illust_01.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-local-func">
+                    <a class="popup-close" href="javascript:closePop_1();">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //layer-popup -->
+
+    <!-- layer-popup -->
+    <div class="layer-popup" id="popupLayer_2">
+        <div class="popup-page-body">
+            <div class="popup-local">
+                <div class="popup-local-head">
+                    <span class="popup-title">Autumn Leaves</span>
+                </div>
+                <div class="popup-local-body">
+                    <div class="content">
+                        <div class="content-body">
+                            <img src="./img/pop_illust_02.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-local-func">
+                    <a class="popup-close" href="javascript:closePop_2();">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //layer-popup -->
+
+    <!-- layer-popup -->
+    <div class="layer-popup" id="popupLayer_3">
+        <div class="popup-page-body">
+            <div class="popup-local">
+                <div class="popup-local-head">
+                    <span class="popup-title">Winter Wonderland</span>
+                </div>
+                <div class="popup-local-body">
+                    <div class="content">
+                        <div class="content-body">
+                            <img src="./img/pop_illust_03.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-local-func">
+                    <a class="popup-close" href="javascript:closePop_3();">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //layer-popup -->
+
+    <!-- layer-popup -->
+    <div class="layer-popup" id="popupLayer_4">
+        <div class="popup-page-body">
+            <div class="popup-local">
+                <div class="popup-local-head">
+                    <span class="popup-title">Subway Infographic</span>
+                </div>
+                <div class="popup-local-body">
+                    <div class="content">
+                        <div class="content-body">
+                            <img src="./img/pop_info_01.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-local-func">
+                    <a class="popup-close" href="javascript:closePop_4();">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //layer-popup -->
+
+    <!-- layer-popup -->
+    <div class="layer-popup horizontal" id="popupLayer_5">
+        <div class="popup-page-body">
+            <div class="popup-local">
+                <div class="popup-local-head">
+                    <span class="popup-title">Jeju Infographic</span>
+                </div>
+                <div class="popup-local-body">
+                    <div class="content">
+                        <div class="content-body">
+                            <img src="./img/pop_info_02.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-local-func">
+                    <a class="popup-close" href="javascript:closePop_5();">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //layer-popup -->
+
+    <!-- layer-popup -->
+    <div class="layer-popup" id="popupLayer_6">
+        <div class="popup-page-body">
+            <div class="popup-local">
+                <div class="popup-local-head">
+                    <span class="popup-title">Museum Infographic</span>
+                </div>
+                <div class="popup-local-body">
+                    <div class="content">
+                        <div class="content-body">
+                            <img src="./img/pop_info_03.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-local-func">
+                    <a class="popup-close" href="javascript:closePop_6();">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //layer-popup -->
+
+
+    <script>
+        const btnHome = document.querySelector('.main');
+        const sectionHome = document.querySelector('#main');
+        btnHome.addEventListener('click', function () {
+        sectionHome.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+        const btnAbout = document.querySelector('.intro');
+        const sectionAbout = document.querySelector('#intro');
+        btnAbout.addEventListener('click', function () {
+        sectionAbout.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+        const btnSkills = document.querySelector('.product');
+        const sectionSkills = document.querySelector('#product');
+        btnSkills.addEventListener('click', function () {
+        sectionSkills.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+        const btnWorks = document.querySelector('.graphic');
+        const sectionWorks = document.querySelector('#graphic');
+        btnWorks.addEventListener('click', function () {
+        sectionWorks.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+        const btncontact = document.querySelector('.contact');
+        const sectioncontact = document.querySelector('#footer');
+        btncontact.addEventListener('click', function () {
+        sectioncontact.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+
+        // top-button
+        // const arrowUp = document.querySelector('.arrow-up');
+        // arrowUp.addEventListener('click', function() {
+        // sectionHome.scrollIntoView({behavior:"smooth", block:"center"});})
+        
+        // document.addEventListener('scroll', function() {
+        //     if (window.scrollY > 300) {
+        //         arrowUp.classList.add('show');
+        //     } else {
+        //         arrowUp.classList.remove('show')
+        //     }
+        // })
+    </script>
+    <script>
+        //팝업 띄우기
+        function openPop_1() {
+            document.getElementById("popupLayer_1").style.display = "block";
+        }
+        function openPop_2() {
+            document.getElementById("popupLayer_2").style.display = "block";
+        }
+        function openPop_3() {
+            document.getElementById("popupLayer_3").style.display = "block";
+        }
+        function openPop_4() {
+            document.getElementById("popupLayer_4").style.display = "block";
+        }
+        function openPop_5() {
+            document.getElementById("popupLayer_5").style.display = "block";
+        }
+        function openPop_6() {
+            document.getElementById("popupLayer_6").style.display = "block";
+        }
+        
+        //팝업 닫기
+        function closePop_1() {
+            document.getElementById("popupLayer_1").style.display = "none";
+        }
+        function closePop_2() {
+            document.getElementById("popupLayer_2").style.display = "none";
+        }
+        function closePop_3() {
+            document.getElementById("popupLayer_3").style.display = "none";
+        }
+        function closePop_4() {
+            document.getElementById("popupLayer_4").style.display = "none";
+        }
+        function closePop_5() {
+            document.getElementById("popupLayer_5").style.display = "none";
+        }
+        function closePop_6() {
+            document.getElementById("popupLayer_6").style.display = "none";
+        }
+    </script>
 </body>
 </html>

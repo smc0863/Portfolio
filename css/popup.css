@@ -1,0 +1,62 @@
+.layer-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.layer-popup .popup-page-body .popup-local {
+  width: 540rem;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30rem 30rem;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.layer-popup .popup-page-body .popup-local .popup-local-head {
+  text-align: left;
+  font-size: 20rem;
+  font-weight: bold;
+  color: #191d26;
+}
+.layer-popup .popup-page-body .popup-local .popup-local-body {
+  margin-top: 20rem;
+}
+.layer-popup .popup-page-body .popup-local .popup-local-body .content .content-body img {
+  width: 100%;
+}
+.layer-popup .popup-page-body .popup-local .popup-local-func {
+  width: 100%;
+  padding: 14rem;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1rem solid #d8dbe1;
+  margin-top: 20rem;
+  position: relative;
+}
+.layer-popup .popup-page-body .popup-local .popup-local-func .popup-close {
+  color: #373b44;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 24rem;
+}
+.layer-popup .popup-page-body .popup-local .popup-local-func .popup-close::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.layer-popup.horizontal .popup-page-body .popup-local {
+  width: 840rem;
+}
