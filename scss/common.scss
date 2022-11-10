@@ -13,8 +13,8 @@ html {
     font-size: 1px;
     
     ::selection {
-        background-color: $main-color;
-        color: white;
+        background-color: rgb(255, 255, 0, 0.7);
+        color: rgb(46, 46, 46);
     }
     
     body {
@@ -59,4 +59,9 @@ a {
 .para {
     margin: 0;
     padding: 0;
+}
+
+.em {
+    color: #EE242E;
+    margin-right: 4rem;
 }

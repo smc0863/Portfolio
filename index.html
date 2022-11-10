@@ -23,6 +23,9 @@
     <!-- fontawesome link -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' />
 
+    <!-- nav_bar color -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- css link -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
@@ -34,7 +37,7 @@
         <div id="page">
             <!-- header -->
             <div class="page-head" id="header">
-                <h1 class="page-subject"><a href="#index.html" class="page-name"><img src="./img/logo.png" alt="Cheoli's Porfolio"></a></h1>
+                <h1 class="page-subject"><a href="#index.html" class="page-logo"><span class="page-name">신민철의 포트폴리오</span></a></h1>
                 <!-- page-navi -->
                 <div class="page-navi">
                     <div class="section-wrap">
@@ -72,34 +75,28 @@
                                     <h3 class="content-subject"><span class="content-name">Cheoli's Portfolio</span></h3>
                                 </div>
                                 <div class="content-body">
-
                                     <div class="display-board main" id="main">
                                         <div class="board-wrap">
                                             <div class="board-head">
                                                 <p class="board-subject">
                                                     <span class="board-name">
-                                                        <span class="wbr">세상을 더 편리하게,</span>
-                                                        <span class="wbr">내일을 새롭게</span>
+                                                        <span class="wbr">2022 Web Portfolio</span>
+                                                        <span class="wbr">Markup Developer</span>
                                                     </span>
                                                 </p>
-                                                <p class="board-summary">Cheoli's Porfolio</p>
+                                                <p class="board-creed">Everything you can imagine is real.</p>
                                             </div>
                                             <div class="board-body">
-
-                                                <div class="visual-wrap">
-                                                    <img src="./img/" alt="">
-                                                </div>
-
                                                 <!-- intro-info -->
                                                 <div class="intro-info">
                                                     <div class="section ability">
                                                         <div class="section-wrap">
                                                             <div class="section-head">
-                                                                <p class="section-subject"><strong class="section-name">희망 직무</strong></p>
+                                                                <p class="section-subject"><strong class="section-name">프로필 소개</strong></p>
                                                             </div>
                                                             <div class="section-body">
-                                                                <span class="ability-name">web designer</span>
-                                                                <span class="ability-name">publisher</span>
+                                                                <span class="ability-name">Digital Design</span>
+                                                                <span class="ability-name">Shin Min Cheol</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -125,35 +122,160 @@
                                                     </div>
                                                 </div>
                                                 <!-- //intro-info -->
-
                                             </div>
                                         </div>
                                     </div>
-
-                                    
-
-                                    <!-- display-board -->
-                                    <div class="display-board welcome">
-                                        <div class="board-body">
-                                            <p class="board-text">
-                                                <span class="wbr">저의 포트폴리오 사이트에 오신 걸 환영합니다!</span>
-                                                <span class="wbr">끊임없이 발전하는 <mark>마크업 개발자</mark> 신민철입니다.</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <!-- //display-board -->
-
                                     <!-- section-intro -->
                                     <div class="section intro" id="intro">
                                         <div class="section-wrap">
                                             <div class="section-head">
                                                 <h4 class="section-subject"><span class="section-name">Self-Introduce</span></h4>
                                                 <p class="section-summary">
-                                                    <span class="wbr">적절한 텍스트를 찾지 못해 고민중인 부분입니다. 이정도의 길이는</span>
-                                                    <span class="wbr">나와야 하는데 이게 뭐라고 한참을 붙잡고 있습니다. 누가 좀 도와주세요!</span>
+                                                    <span class="wbr">한국폴리텍대학 서울정수캠퍼스에서 디지털디자인을 전공했고,</span>
+                                                    <span class="wbr">현재는 퍼블리셔로 일하며 프론트엔드 역량을 키워나가고 있습니다.</span>
                                                 </p>
                                             </div>
                                             <div class="section-body">
+
+                                                 <!-- section skills -->
+                                                 <div class="subsection skills">
+                                                    <div class="subsection-wrap">
+                                                        <div class="subsection-head">
+                                                            <h4 class="subsection-subject"><span class="subsection-name">Skills</span></h4>
+                                                        </div>
+                                                        <div class="subsection-body">
+                                                            <!-- Swiper skills -->
+                                                            <div class="posts-display swiper skillSwiper">
+                                                                <div class="posts-list swiper-wrapper skills">
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/git.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Git</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/html.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">HTML</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/css.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">CSS</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/npm.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">npm</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/node.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">node</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/js.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">JavaScript</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/sass.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">sass</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/gulp.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">gulp</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- //swiper-wrapper -->
+                                                            </div>
+                                                            <!-- //swiper skills -->
+                                                            <!-- Swiper tools -->
+                                                            <div class="posts-display swiper toolSwiper">
+                                                                <div class="posts-list swiper-wrapper tools">
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/ps.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Photoshop</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/github.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Github</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/vscode.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Visual Studio Code</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/figma.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Figma</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/ai.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Illustrator</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/excel.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Excel</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/xd.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Xd</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="posts-item swiper-slide">
+                                                                        <div class="posts-wrap" style="background-image:url(./img/ppt.png);">
+                                                                            <div class="posts-head">
+                                                                                <p class="posts-subject"><span class="posts-name">Power Point</span></p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- //swiper-wrapper -->
+                                                            </div>
+                                                            <!-- //swiper tools-->
+                                                        </div>
+                                                        <!-- //section-body -->
+                                                    </div>
+                                                    <!-- //section-wrap -->
+                                                </div>
+                                                <!-- //section skills -->
                                                 <!-- subsection-ability -->
                                                 <div class="subsection ability">
                                                     <div class="subsection-wrap">
@@ -165,7 +287,7 @@
                                                                 <caption>활용 능력</caption>
                                                                 <colgroup>
                                                                     <col style="width: 220rem;" />
-                                                                    <col style="width: 150rem;" />
+                                                                    <col style="width: 130rem;" />
                                                                     <col />
                                                                 </colgroup>
                                                                 <thead>
@@ -189,7 +311,7 @@
                                                                     <tr>
                                                                         <td>JavaScript</td>
                                                                         <td>중</td>
-                                                                        <td>접근성을 해치지 않는 인터랙션 활용 가능</td>
+                                                                        <td>플러그인을 사용해 원하는 인터랙션을 구현할 수 있습니다.</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Photoshop</td>
@@ -212,7 +334,6 @@
                                                     </div>
                                                 </div>
                                                 <!-- //subsection-ability -->
-
                                                 <!-- subsection-licence -->
                                                 <div class="subsection ability">
                                                     <div class="subsection-wrap">
@@ -223,7 +344,7 @@
                                                             <table>
                                                                 <caption>활용 능력</caption>
                                                                 <colgroup>
-                                                                    <col style="width: 220rem;" />
+                                                                    <col style="width: 210rem;" />
                                                                     <col />
                                                                     <col style="width: 130rem" />
                                                                     <col style="width: 240rem;" />
@@ -283,7 +404,16 @@
                                         </div>
                                     </div>
                                     <!-- //section-intro -->
-
+                                    <!-- display-board -->
+                                    <div class="display-board welcome">
+                                        <div class="board-body">
+                                            <p class="board-text">
+                                                <span class="wbr">저의 포트폴리오 사이트에 오신 걸 환영합니다!</span>
+                                                <span class="wbr">끊임없이 발전하는 <mark class="highlight">마크업 개발자</mark> 신민철입니다.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- //display-board -->
                                     <!-- section web-port -->
                                     <div class="section web-port" id="product">
                                         <div class="section-wrap">
@@ -295,19 +425,18 @@
                                                 </p>
                                             </div>
                                             <div class="section-body">
-
                                                 <!-- Swiper -->
                                                 <div class="posts-display swiper webSwiper">
                                                     <div class="posts-list swiper-wrapper">
                                                         <div class="posts-item swiper-slide">
                                                             <div class="posts-figure">
-                                                                <a class="posts-thumnail" href="https://bemin-landing.netlify.app">
+                                                                <a class="posts-thumnail" href="https://bemin-landing.netlify.app" target="_blank">
                                                                     <img class="posts-image" src="./img/thum_worldvision.jpg" alt="" />
                                                                 </a>
                                                             </div>
                                                             <div class="posts-inform">
                                                                 <div class="posts-head">
-                                                                    <p class="posts-subject"><span class="posts-name">Worild Vision</span></p>
+                                                                    <p class="posts-subject"><span class="posts-name">월드비전 (World Vision)</span></p>
                                                                 </div>
                                                                 <div class="posts-body">
                                                                     <div class="data-list">
@@ -319,13 +448,31 @@
                                                         </div>
                                                         <div class="posts-item swiper-slide">
                                                             <div class="posts-figure">
-                                                                <a class="posts-thumnail" href="https://bemin-landing.netlify.app">
-                                                                    <img class="posts-image" src="/img/thum_landing.jpg" alt="" />
+                                                                <a class="posts-thumnail" href="https://kakaotalk-clone.netlify.app" target="_blank">
+                                                                    <img class="posts-image" src="./img/thum_kakao.jpg" alt="" />
                                                                 </a>
                                                             </div>
                                                             <div class="posts-inform">
                                                                 <div class="posts-head">
-                                                                    <p class="posts-subject"><span class="posts-name">배달의민족 랜딩페이지</span></p>
+                                                                    <p class="posts-subject"><span class="posts-name">카카오톡 Mobile Ver.</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.07.02</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://bemin-landing.netlify.app" target="_blank">
+                                                                    <img class="posts-image" src="./img/thum_landing.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">배달의민족 (Baemin)</span></p>
                                                                 </div>
                                                                 <div class="posts-body">
                                                                     <div class="data-list">
@@ -337,7 +484,25 @@
                                                         </div>
                                                         <div class="posts-item swiper-slide">
                                                             <div class="posts-figure">
-                                                                <a class="posts-thumnail" href="https://glamshell.netlify.app">
+                                                                <a class="posts-thumnail" href="https://korea-movie-site.netlify.app/" target="_blank">
+                                                                    <img class="posts-image" src="./img/thum_math.jpg" alt="" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="posts-inform">
+                                                                <div class="posts-head">
+                                                                    <p class="posts-subject"><span class="posts-name">이상한 나라의 수학자 (Movie)</span></p>
+                                                                </div>
+                                                                <div class="posts-body">
+                                                                    <div class="data-list">
+                                                                        <span class="data-head">Date</span>
+                                                                        <span class="data-body">2022.06.16</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="posts-item swiper-slide">
+                                                            <div class="posts-figure">
+                                                                <a class="posts-thumnail" href="https://glamshell.netlify.app" target="_blank">
                                                                     <img class="posts-image" src="./img/thum_glamshell.jpg" alt="" />
                                                                 </a>
                                                             </div>
@@ -355,43 +520,24 @@
                                                         </div>
                                                         <div class="posts-item swiper-slide">
                                                             <div class="posts-figure">
-                                                                <a class="posts-thumnail" href="https://korea-movie-site.netlify.app/">
-                                                                    <img class="posts-image" src="./img/thum_math.jpg" alt="" />
+                                                                <a class="posts-thumnail" href="#">
+                                                                    <img class="posts-image" src="./img/thum_coming.jpg" alt="" />
                                                                 </a>
                                                             </div>
                                                             <div class="posts-inform">
                                                                 <div class="posts-head">
-                                                                    <p class="posts-subject"><span class="posts-name">이상한 나라의 수학자</span></p>
+                                                                    <p class="posts-subject"><span class="posts-name">새로운 프로젝트 (New Project)</span></p>
                                                                 </div>
                                                                 <div class="posts-body">
                                                                     <div class="data-list">
                                                                         <span class="data-head">Date</span>
-                                                                        <span class="data-body">2022.06.16</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="posts-item swiper-slide">
-                                                            <div class="posts-figure">
-                                                                <a class="posts-thumnail" href="https://kakaotalk-clone.netlify.app">
-                                                                    <img class="posts-image" src="./img/kakaotalk.jpg" alt="" />
-                                                                </a>
-                                                            </div>
-                                                            <div class="posts-inform">
-                                                                <div class="posts-head">
-                                                                    <p class="posts-subject"><span class="posts-name">카카오톡 Mobile Ver.</span></p>
-                                                                </div>
-                                                                <div class="posts-body">
-                                                                    <div class="data-list">
-                                                                        <span class="data-head">Date</span>
-                                                                        <span class="data-body">2022.07.02</span>
+                                                                        <span class="data-body">2023.01.23</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                                 <div class="button-display">
                                                     <span class="button-area">
                                                         <div class="swiper-button-next"></div>
@@ -403,7 +549,7 @@
                                                 <script>
                                                 var swiper = new Swiper(".webSwiper", {
                                                     slidesPerView: 3,
-                                                    spaceBetween: 70,
+                                                    spaceBetween: 60,
                                                     slidesPerGroup: 3,
                                                     loop: true,
                                                     loopFillGroupWithBlank: true,
@@ -428,25 +574,23 @@
 
                                                             1640: {
                                                                 slidesPerView: 3,
-                                                                spaceBetween: 60,
+                                                                spaceBetween: 70,
                                                             }
                                                         }
                                                         
                                                 });
                                                 </script>
-
                                             </div>
                                         </div>
                                     </div>
                                     <!-- //section web-port -->
-
                                     <!-- section-design -->
                                     <div class="section design" id="graphic">
                                         <div class="section-wrap">
                                             <div class="section-head">
                                                 <h4 class="section-subject"><span class="section-name">Graphic Design</span></h4>
                                                 <p class="section-summary">
-                                                    <span class="wbr">Illustrator, Photoshop, Lightroom 등의 툴을 사용해 작업했으며, </span>
+                                                    <span class="wbr">Photoshop, Illustrator, Lightroom 등의 툴을 사용해 작업했으며, </span>
                                                     <span class="wbr">학기 중 과제 제출용으로 만들었던 작품들을 보완해 최종 완성하였습니다.</span>
                                                 </p>
                                             </div>
@@ -512,15 +656,17 @@
                                                     </div>
                                                 </div>
                                                 <!-- //design-swiper -->
-
                                                 <script>
                                                     var swiper = new Swiper(".designSwiper", {
                                                         slidesPerView: 5,
                                                         spaceBetween: 50,
                                                         loop: true,
+                                                        autoplay: {
+                                                            delay: 3000,
+                                                            disableOnInteraction: false,
+                                                        }
                                                     });
                                                 </script>
-                                                
                                             </div>
                                             <!-- //section-body -->
                                         </div>
@@ -539,36 +685,62 @@
                 <!-- //local -->
             </div>
             <!-- //main -->
-
             <!-- footer -->
             <div class="page-foot" id="footer">
-                <div class="section notice">
-                    <div class="section-wrap">
-                        <div class="section-head">
-                            <h2 class="section-subject"><span class="section-name">공지사항</span></h2>
+                <div class="section-container first">
+                    <div class="section notice">
+                        <div class="section-wrap">
+                            <div class="section-head">
+                                <h2 class="section-subject"><span class="section-name">공지사항</span></h2>
+                            </div>
+                            <div class="section-body">
+                                <p class="para">
+                                    <span class="wbr">본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로</span>
+                                    <span class="wbr">제작되었으며 크롬 브라우저 환경에 최적화되어있습니다.</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="section-body">
-                            <p class="para">
-                                <span class="wbr">본 사이트는 상업적 목적이 아닌 개인 <mark class="highlight">포트폴리오 사이트</mark>로</span>
-                                <span class="wbr">제작되었으며 <mark class="highlight">1920 x 1080 해상도에 최적화</mark> 되어있습니다.</span>
-                            </p>
+                    </div>   
+                </div>
+                <div class="section-container second">
+                    <div class="section personal-info">
+                        <div class="section-wrap">
+                            <div class="section-head">
+                                <h2 class="section-subject"><span class="section-name">개인정보</span></h2>
+                            </div>
+                            <div class="section-body">
+                                <ul class="data-list">
+                                    <li class="data-item">Shin Min Cheol</li>
+                                    <li class="data-item">010-5597-0863</li>
+                                    <li class="data-item">smc0863@naver.com</li>
+                                </ul>
+                                <p class="copyright">
+                                    <span class="wbr">Copyright © Cheoli's Portfolio. ALL RIGHT RESERVED</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="section personal-info">
-                    <div class="section-wrap">
-                        <div class="section-head">
-                            <h2 class="section-subject"><span class="section-name">개인정보</span></h2>
-                        </div>
-                        <div class="section-body">
-                            <ul class="data-list">
-                                <li class="data-item">Shin Min Cheol</li>
-                                <li class="data-item">010-5597-0863</li>
-                                <li class="data-item">smc0863@naver.com</li>
-                            </ul>
-                            <p class="copyright">
-                                <span class="wbr">COPYRIGHTⓒ2022 MinCheol. ALL RIGHT RESERVED</span>
-                            </p>
+                    <div class="section family-site">
+                        <div class="section-wrap">
+                            <div class="section-head">
+                                <h2 class="section-subject"><span class="section-name" tabindex="0">Family Site</span></h2>
+                            </div>
+                            <div class="section-body">
+                                <ul class="navi-list">
+                                    <li class="navi-item">
+                                        <a class="navi-text" href="https://www.kopo.ac.kr" target="_blank">한국폴리텍대학</a>
+                                    </li>
+                                    <li class="navi-item">
+                                        <a class="navi-text" href="https://www.kopo.ac.kr/jungsu" target="_blank">한국폴리텍대학 정수캠퍼스</a>
+                                    </li>
+                                    <li class="navi-item">
+                                        <a class="navi-text" href="https://www.kopo.ac.kr/jungsu/content.do?menu=1446" target="_blank">정수캠퍼스 시각디자인과</a>
+                                    </li>
+                                    <li class="navi-item">
+                                        <a class="navi-text" href="http://polyjungsudesign.com/" target="_blank">정수캠퍼스 졸업전시회</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -576,7 +748,6 @@
             <!-- //footer -->
         </div>
     </div>
-
     <!-- layer-popup -->
     <div class="layer-popup" id="popupLayer_1">
         <div class="popup-page-body">
@@ -598,7 +769,6 @@
         </div>
     </div>
     <!-- //layer-popup -->
-
     <!-- layer-popup -->
     <div class="layer-popup" id="popupLayer_2">
         <div class="popup-page-body">
@@ -620,7 +790,6 @@
         </div>
     </div>
     <!-- //layer-popup -->
-
     <!-- layer-popup -->
     <div class="layer-popup" id="popupLayer_3">
         <div class="popup-page-body">
@@ -642,7 +811,6 @@
         </div>
     </div>
     <!-- //layer-popup -->
-
     <!-- layer-popup -->
     <div class="layer-popup" id="popupLayer_4">
         <div class="popup-page-body">
@@ -664,7 +832,6 @@
         </div>
     </div>
     <!-- //layer-popup -->
-
     <!-- layer-popup -->
     <div class="layer-popup horizontal" id="popupLayer_5">
         <div class="popup-page-body">
@@ -686,7 +853,6 @@
         </div>
     </div>
     <!-- //layer-popup -->
-
     <!-- layer-popup -->
     <div class="layer-popup" id="popupLayer_6">
         <div class="popup-page-body">
@@ -709,7 +875,42 @@
     </div>
     <!-- //layer-popup -->
 
+    <script>
+        var swiper = new Swiper(".swiper.skillSwiper", {
+            // 한 슬라이드에 보여주는 갯수
+            slidesPerView: 8,
+            // 슬라이드 사이 여백
+            spaceBetween: 100,
+            slidesPerGroup: 8,
+            loop: true,
+            allowTouchMove : false,
+            speed: 60000,
+            autoplay: {
+                // 시간 설정
+                delay : 0,
+            },
+        });
+    </script>
 
+    <script>
+        var swiper = new Swiper(".swiper.toolSwiper", {
+            // 한 슬라이드에 보여주는 갯수
+            slidesPerView: 8,
+            // 슬라이드 사이 여백
+            spaceBetween: 100,
+            slidesPerGroup: 8,
+            loop: true,
+            allowTouchMove : false,
+            speed: 60000,
+            autoplay: {
+                // 시간 설정
+                reverseDirection: true,
+                delay : 0,
+            },
+        });
+    </script>
+
+    <!-- script-section -->
     <script>
         const btnHome = document.querySelector('.main');
         const sectionHome = document.querySelector('#main');
@@ -791,5 +992,27 @@
             document.getElementById("popupLayer_6").style.display = "none";
         }
     </script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll > 50) {
+                $(".page-head").css("background" , "white");
+                $(".page-head").css("border-bottom" , "1rem solid rgb(222, 222, 222)");
+                $(".page-head").css("transition" , "all 0.3s ease");
+                $(".page-logo").css("background-image" , "url(../img/logo_black.png)");
+                $("button").css("color" , "black");
+                
+                }
+                else {
+                $(".page-head").css("background" , "transparent");   
+                $(".page-head").css("border-bottom" , "none");
+                $(".page-logo").css("background-image" , "url(../img/logo_white.png)");
+                $("button").css("color" , "white");
+                }
+            })
+        })
+        </script>
 </body>
 </html>
+

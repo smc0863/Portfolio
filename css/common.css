@@ -64,16 +64,43 @@
     transform: translatex(0px);
   }
 }
-.em.accent-01 {
-  color: #ef6759;
-  font-size: 48rem;
+.highlight {
+  background-color: rgba(255, 255, 52, 0.8);
 }
 
-.highlight { /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 45%, #ffff00 45%, #ffff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffff00",GradientType=0 ); /* IE6-9 */
+@-webkit-keyframes image-zoom-out {
+  from {
+    transform: scale(1.2, 1.2);
+  }
+  to {
+    transform: scale(1, 1);
+  }
 }
 
+@keyframes image-zoom-out {
+  from {
+    transform: scale(1.2, 1.2);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes rotate-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-img {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -85,12 +112,12 @@ html {
   font-size: 1px;
 }
 html ::-moz-selection {
-  background-color: #ef6759;
-  color: white;
+  background-color: rgba(255, 255, 0, 0.7);
+  color: rgb(46, 46, 46);
 }
 html ::selection {
-  background-color: #ef6759;
-  color: white;
+  background-color: rgba(255, 255, 0, 0.7);
+  color: rgb(46, 46, 46);
 }
 html body {
   height: 100%;
@@ -130,4 +157,9 @@ a {
 .para {
   margin: 0;
   padding: 0;
+}
+
+.em {
+  color: #EE242E;
+  margin-right: 4rem;
 }
