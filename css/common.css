@@ -64,7 +64,16 @@
     transform: translatex(0px);
   }
 }
-.highlight {
+button {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  color: white;
+}
+
+mark {
   background-color: rgba(255, 255, 52, 0.8);
 }
 
@@ -99,6 +108,28 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes up-down-left {
+  0% {
+    transform: translateY(-20rem);
+  }
+  50% {
+    transform: translateY(20rem);
+  }
+  100% {
+    transform: translateY(-20rem);
+  }
+}
+@keyframes up-down-left {
+  0% {
+    transform: translateY(-20rem);
+  }
+  50% {
+    transform: translateY(20rem);
+  }
+  100% {
+    transform: translateY(-20rem);
   }
 }
 * {

@@ -14,23 +14,20 @@
     <meta property="og:site_name" content="Cheoli's Porfolio">
     <title>Cheoli's Portfolio</title>
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
     <!-- fontawesome link -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' />
-
-    <!-- nav_bar color -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    <link rel="shortcut icon" href="./img/favicon.png">
     <!-- css link -->
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/popup.css" />
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- nav_bar color -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
 </head>
 <body>
     <div id="wrap">
@@ -112,10 +109,10 @@
                                                             </div>
                                                             <div class="section-body">
                                                                 <ul class="sns-list">
-                                                                    <li class="sns-item"><a class="sns-icon blog" href="#"></a></li>
-                                                                    <li class="sns-item"><a class="sns-icon infl" href="#"></a></li>
-                                                                    <li class="sns-item"><a class="sns-icon kakao" href="#"></a></li>
-                                                                    <li class="sns-item"><a class="sns-icon insta" href="#"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon blog" href="#" style="background-image: url(../svg/sns_blog.svg)"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon infl" href="#" style="background-image: url(../svg/sns_infl.svg)"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon kakao" href="#" style="background-image: url(../svg/sns_kakao.svg)"></a></li>
+                                                                    <li class="sns-item"><a class="sns-icon insta" href="#" style="background-image: url(../svg/sns_insta.svg)"></a></li>
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -126,7 +123,7 @@
                                         </div>
                                     </div>
                                     <!-- section-intro -->
-                                    <div class="section intro" id="intro">
+                                    <div class="section intro">
                                         <div class="section-wrap">
                                             <div class="section-head">
                                                 <h4 class="section-subject"><span class="section-name">Self-Introduce</span></h4>
@@ -137,11 +134,38 @@
                                             </div>
                                             <div class="section-body">
 
-                                                 <!-- section skills -->
-                                                 <div class="subsection skills">
+                                                <div class="subsection profile" id="introduce">
                                                     <div class="subsection-wrap">
                                                         <div class="subsection-head">
-                                                            <h4 class="subsection-subject"><span class="subsection-name">Skills</span></h4>
+                                                            <h5 class="subsection-subject"><span class="subsection-name">Profile</span></h5>
+                                                        </div>
+                                                        <div class="subsection-body">
+                                                            <div class="intro-display">
+                                                                <div class="intro-wrap">
+                                                                    <div class="intro-head">
+                                                                        <strong class="intro-subject"><p class="intro-title"> <span class="wbr">끊임없이 발전하는</span><span>마크업 개발자 신민철입니다.</span></p></strong>
+                                                                    </div>
+                                                                    <div class="intro-body">
+                                                                        <span class="wbr">한국폴리텍대학 서울정수캠퍼스에서 디지털디자인을 전공했고,</span>
+                                                                        <span class="wbr">현재는 퍼블리셔로 일하며 프론트엔드 역량을 키워나가고 있습니다.</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="button-display">
+                                                                    <span class="button-area">
+                                                                        <button class="btn style-a products" href="#">작업물 보러가기</button>
+                                                                        <a class="btn style-a call" href="tel:010-1234-5678">전화걸기</a>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- section skills -->
+                                                <div class="subsection skills">
+                                                    <div class="subsection-wrap">
+                                                        <div class="subsection-head">
+                                                            <h5 class="subsection-subject"><span class="subsection-name">Skills</span></h5>
                                                         </div>
                                                         <div class="subsection-body">
                                                             <!-- Swiper skills -->
@@ -311,7 +335,7 @@
                                                                     <tr>
                                                                         <td>JavaScript</td>
                                                                         <td>중</td>
-                                                                        <td>플러그인을 사용해 원하는 인터랙션을 구현할 수 있습니다.</td>
+                                                                        <td>플러그인을 사용해 원하는 인터랙션 구현 가능</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Photoshop</td>
@@ -408,8 +432,8 @@
                                     <div class="display-board welcome">
                                         <div class="board-body">
                                             <p class="board-text">
-                                                <span class="wbr">저의 포트폴리오 사이트에 오신 걸 환영합니다!</span>
-                                                <span class="wbr">끊임없이 발전하는 <mark class="highlight">마크업 개발자</mark> 신민철입니다.</span>
+                                                <span class="wbr">협력 부서와의 <mark>원활한 소통</mark>을 중요하게 생각하며,</span>
+                                                <span class="wbr">유지보수가 용이한 마크업 개발에 관심이 많습니다</span>
                                             </p>
                                         </div>
                                     </div>
@@ -545,7 +569,6 @@
                                                     </span>
                                                 </div>
                                                 
-                                                <!-- Initialize Swiper -->
                                                 <script>
                                                 var swiper = new Swiper(".webSwiper", {
                                                     slidesPerView: 3,
@@ -562,22 +585,21 @@
                                                     },
 
                                                     breakpoints: {
-                                                            768: {
-                                                                slidesPerView: 2,
-                                                                spaceBetween: 40,
-                                                            },
+                                                        425: {
+                                                            slidesPerView: 2,
+                                                            spaceBetween: 40,
+                                                        },
 
-                                                            1024: {
-                                                                slidesPerView: 3,
-                                                                spaceBetween: 40,
-                                                            }, 
+                                                        1024: {
+                                                            slidesPerView: 3,
+                                                            spaceBetween: 40,
+                                                        }, 
 
-                                                            1640: {
-                                                                slidesPerView: 3,
-                                                                spaceBetween: 70,
-                                                            }
+                                                        1640: {
+                                                            slidesPerView: 3,
+                                                            spaceBetween: 70,
                                                         }
-                                                        
+                                                    }
                                                 });
                                                 </script>
                                             </div>
@@ -664,6 +686,27 @@
                                                         autoplay: {
                                                             delay: 3000,
                                                             disableOnInteraction: false,
+                                                        },
+                                                        breakpoints: {
+                                                            425: {
+                                                                slidesPerView: 3,
+                                                                spaceBetween: 40,
+                                                            },
+
+                                                            1024: {
+                                                                slidesPerView: 4,
+                                                                spaceBetween: 40,
+                                                            }, 
+
+                                                            1440: {
+                                                                slidesPerView: 4,
+                                                                spaceBetween: 50,
+                                                            },
+
+                                                            1640: {
+                                                                slidesPerView: 5,
+                                                                spaceBetween: 50,
+                                                            }
                                                         }
                                                     });
                                                 </script>
@@ -889,6 +932,22 @@
                 // 시간 설정
                 delay : 0,
             },
+            // breakpoints: {
+            //     425: {
+            //         slidesPerView: 5,
+            //         spaceBetween: 200,
+            //     },
+
+            //     1024: {
+            //         slidesPerView: 6,
+            //         spaceBetween: 200,
+            //     }, 
+
+            //     1640: {
+            //         slidesPerView: 8,
+            //         spaceBetween: 200,
+            //     }
+            // },
         });
     </script>
 
@@ -904,8 +963,9 @@
             speed: 60000,
             autoplay: {
                 // 시간 설정
-                reverseDirection: true,
                 delay : 0,
+                reverseDirection: true,
+                waitForTransition: false,
             },
         });
     </script>
@@ -916,16 +976,23 @@
         const sectionHome = document.querySelector('#main');
         btnHome.addEventListener('click', function () {
         sectionHome.scrollIntoView({behavior:"smooth", block:"center"});
-        });
+        }
+        );
         const btnAbout = document.querySelector('.intro');
-        const sectionAbout = document.querySelector('#intro');
+        const sectionAbout = document.querySelector('#introduce');
         btnAbout.addEventListener('click', function () {
         sectionAbout.scrollIntoView({behavior:"smooth", block:"center"});
-        });
+        }
+        );
         const btnSkills = document.querySelector('.product');
         const sectionSkills = document.querySelector('#product');
         btnSkills.addEventListener('click', function () {
         sectionSkills.scrollIntoView({behavior:"smooth", block:"center"});
+        });
+        const btnProduct = document.querySelector('.products');
+        const sectionProduct = document.querySelector('#product');
+        btnProduct.addEventListener('click', function () {
+        sectionProduct.scrollIntoView({behavior:"smooth", block:"center"});
         });
         const btnWorks = document.querySelector('.graphic');
         const sectionWorks = document.querySelector('#graphic');
@@ -955,21 +1022,51 @@
         //팝업 띄우기
         function openPop_1() {
             document.getElementById("popupLayer_1").style.display = "block";
+            $('.layer-popup').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+            });
         }
         function openPop_2() {
             document.getElementById("popupLayer_2").style.display = "block";
+            $('.layer-popup').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+            });
         }
         function openPop_3() {
             document.getElementById("popupLayer_3").style.display = "block";
+            $('.layer-popup').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+            });
         }
         function openPop_4() {
             document.getElementById("popupLayer_4").style.display = "block";
+            $('.layer-popup').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+            }); 
         }
         function openPop_5() {
             document.getElementById("popupLayer_5").style.display = "block";
+            $('.layer-popup').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+            }); 
         }
         function openPop_6() {
             document.getElementById("popupLayer_6").style.display = "block";
+            $('.layer-popup').on('scroll touchmove mousewheel', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+            });
         }
         
         //팝업 닫기
@@ -1000,14 +1097,14 @@
                 $(".page-head").css("background" , "white");
                 $(".page-head").css("border-bottom" , "1rem solid rgb(222, 222, 222)");
                 $(".page-head").css("transition" , "all 0.3s ease");
-                $(".page-logo").css("background-image" , "url(../img/logo_black.png)");
+                $(".page-logo").css("background-image" , "url(./img/logo_black.png)");
                 $("button").css("color" , "black");
                 
                 }
                 else {
                 $(".page-head").css("background" , "transparent");   
                 $(".page-head").css("border-bottom" , "none");
-                $(".page-logo").css("background-image" , "url(../img/logo_white.png)");
+                $(".page-logo").css("background-image" , "url(./img/logo_white.png)");
                 $("button").css("color" , "white");
                 }
             })
