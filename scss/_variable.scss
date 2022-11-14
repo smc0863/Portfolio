@@ -99,3 +99,44 @@ mark {
     }
 }
 
+/* 스크롤매직 */
+.back-to-position {
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  .back-to-position.to-right {
+    transform: translateX(-100px);
+  }
+  .back-to-position.to-right_2 {
+    transform: translateX(-200px);
+  }
+  
+  .back-to-position.to-left {
+    transform: translateX(100px);
+  }
+  .back-to-position.to-left_2 {
+    transform: translateX(200px);
+  }
+  .back-to-position.to-top {
+    transform: translateY(-100px);
+  }
+  .back-to-position.to-top_2 {
+    transform: translateY(-50px);
+  }
+  .back-to-position.to-bottom {
+    transform: translateY(100px);
+  }
+  
+  .show .back-to-position {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .show .back-to-position.delay-0 {
+    transition-delay: 1s;
+  }
+  
+  .show .back-to-position.delay-1 {
+    transition-delay: 2s;
+  }

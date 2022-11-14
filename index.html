@@ -10,24 +10,17 @@
     <meta property="og:url" content="https://cheolis.netlify.app">
     <meta property="og:title" content="Cheoli's Portfolio">
     <meta property="og:description" content="책임감있는 퍼블리셔 신민철입니다.">
-    <meta property="og:img" content="#">
     <meta property="og:site_name" content="Cheoli's Porfolio">
     <title>Cheoli's Portfolio</title>
-
-    <!-- fontawesome link -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' />
     <link rel="shortcut icon" href="./img/favicon.png">
-    <!-- css link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/popup.css" />
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <!-- nav_bar color -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="wrap">
@@ -134,16 +127,17 @@
                                             </div>
                                             <div class="section-body">
 
-                                                <div class="subsection profile" id="introduce">
+                                                <!-- <div class="subsection profile scroll-spy" id="introduce">
                                                     <div class="subsection-wrap">
                                                         <div class="subsection-head">
                                                             <h5 class="subsection-subject"><span class="subsection-name">Profile</span></h5>
                                                         </div>
                                                         <div class="subsection-body">
-                                                            <div class="intro-display">
+                                                            <div class="intro-visual back-to-position to-right"><img src="./img/laptop.png" alt=" " /></div>
+                                                            <div class="intro-display back-to-position to-left">
                                                                 <div class="intro-wrap">
                                                                     <div class="intro-head">
-                                                                        <strong class="intro-subject"><p class="intro-title"> <span class="wbr">끊임없이 발전하는</span><span>마크업 개발자 신민철입니다.</span></p></strong>
+                                                                        <strong class="intro-subject"><p class="intro-title"> <span class="wbr">끊임없이 발전하는</span><span>웹 퍼블리셔 신민철입니다.</span></p></strong>
                                                                     </div>
                                                                     <div class="intro-body">
                                                                         <span class="wbr">한국폴리텍대학 서울정수캠퍼스에서 디지털디자인을 전공했고,</span>
@@ -153,13 +147,13 @@
                                                                 <div class="button-display">
                                                                     <span class="button-area">
                                                                         <button class="btn style-a products" href="#">작업물 보러가기</button>
-                                                                        <a class="btn style-a call" href="tel:010-1234-5678">전화걸기</a>
+                                                                        <a class="btn style-a call" href="tel:010-1234-5678">전화 걸기</a>
                                                                     </span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> -->
 
                                                 <!-- section skills -->
                                                 <div class="subsection skills">
@@ -429,11 +423,11 @@
                                     </div>
                                     <!-- //section-intro -->
                                     <!-- display-board -->
-                                    <div class="display-board welcome">
+                                    <div class="display-board welcome scroll-spy">
                                         <div class="board-body">
-                                            <p class="board-text">
-                                                <span class="wbr">협력 부서와의 <mark>원활한 소통</mark>을 중요하게 생각하며,</span>
-                                                <span class="wbr">유지보수가 용이한 마크업 개발에 관심이 많습니다</span>
+                                            <p class="board-text back-to-position to-bottom">
+                                                <span class="wbr">협력 부서와의 원활한 소통을 중요하게 생각하며,</span>
+                                                <span class="wbr">유지보수가 용이한 마크업 개발에 관심이 많습니다.</span>
                                             </p>
                                         </div>
                                     </div>
@@ -932,22 +926,6 @@
                 // 시간 설정
                 delay : 0,
             },
-            // breakpoints: {
-            //     425: {
-            //         slidesPerView: 5,
-            //         spaceBetween: 200,
-            //     },
-
-            //     1024: {
-            //         slidesPerView: 6,
-            //         spaceBetween: 200,
-            //     }, 
-
-            //     1640: {
-            //         slidesPerView: 8,
-            //         spaceBetween: 200,
-            //     }
-            // },
         });
     </script>
 
@@ -1109,6 +1087,19 @@
                 }
             })
         })
+        </script>
+        <script>
+            const spyEls = document.querySelectorAll(".scroll-spy");
+            const controller = new ScrollMagic.Controller();
+
+            spyEls.forEach(function (spyEl) {
+                new ScrollMagic.Scene({
+                    triggerElement: spyEl,
+                    triggerHook: 0.6,
+                })
+                    .setClassToggle(spyEl, "show")
+                    .addTo(controller);
+            });
         </script>
 </body>
 </html>
