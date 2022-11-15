@@ -1,0 +1,1258 @@
+@charset "utf-8";
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+.campaign-wrap {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.037em;
+}
+
+/* quick-menu-btn */
+.quick-menu-btn {
+    pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    outline: 0 none;
+    padding: 170px 60px;
+    z-index: 100;
+    text-indent: -9999px;
+}
+
+.quick-menu-btn a {    
+    pointer-events: auto;
+    display: block;
+    width: 148px;
+    height: 254px;
+    background: url(../images_self_reliance/quick-menu-01.jpg) no-repeat;
+}
+
+/* section */
+.campaign-wrap .section {
+    position: relative;
+}
+
+.campaign-wrap .section .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title {   
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    padding:160px 0 68px 0;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title .txt-box .sort {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title .txt-box .sort .accent {
+    color: #fac29b;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title .txt-box .title {
+    margin: 32px 0;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title .txt-box .title img {
+    vertical-align: top;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title .txt-box .txt {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #cbc4bc;
+}
+
+.campaign-wrap .section.visual .section-inner .visual-title .txt-box .txt .wbr {    
+    display: block;
+}
+
+.campaign-wrap .section.visual {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background:#181818 url(../images_self_reliance/visual.png) no-repeat top center;
+}
+
+.campaign-wrap .section .section-inner .visual-title .btn-area {
+    margin: 50px 0 100px 0;
+}
+
+.campaign-wrap .section .section-inner .visual-title .info-box {
+    width: 100%;
+}
+
+.campaign-wrap .section .section-inner .visual-title .info-box dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fac29b;
+}
+
+.campaign-wrap .section .section-inner .visual-title .info-box dd {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d6cfc7;
+}
+
+.campaign-wrap .section .section-inner .visual-title .info-box dd .wbr {
+    display: block;
+}
+
+.campaign-wrap .section .section-inner .visual-title .info-box dd + dd {
+    margin-top: 16px;
+}
+
+.campaign-wrap .section .section-inner .visual-video {    
+    position: relative;
+    margin-top: -34px;
+}
+
+.campaign-wrap .section .section-inner .visual-video .video-inner .info-box {
+    padding: 30px 0 92px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #d6cfc7;
+    text-align: center;
+}
+
+.campaign-wrap .section .section-inner .visual-video .video-inner .info-box .br {
+    display: none;
+}
+
+.campaign-wrap .section .section-inner .visual-video .video-box {
+    position: relative;
+    padding-bottom: 56.21%;
+    -webkit-box-shadow: 12px 13px 40px 0px rgba(40, 36, 35, 0.5);
+    box-shadow: 12px 13px 40px 0px rgba(40, 36, 35, 0.5);
+}
+
+.campaign-wrap .section .section-inner .visual-video .video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* */
+.campaign-wrap .section.story .section-box {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.campaign-wrap .section.story .section-box.box-01 {
+    background-image: url(../images_self_reliance/story_01.png);
+    z-index: 3;
+}
+
+.campaign-wrap .section.story .section-box.box-02 {
+    margin-top: -160px;
+    background-image: url(../images_self_reliance/story_02.png);
+    z-index: 2;
+}
+
+.campaign-wrap .section.story .section-box.box-03 {
+    margin-top: -160px;
+    background-image: url(../images_self_reliance/story_03.jpg);
+    z-index: 1;
+}
+
+.campaign-wrap .section.story .section-box.box-04 {
+    background-image: url(../images_self_reliance/story_04.jpg);
+    z-index: 1;
+}
+
+.campaign-wrap .section.story .section-box.box-05 {
+    background-image: url(../images_self_reliance/story_05.jpg);
+    z-index: 1;
+}
+
+.campaign-wrap .section.story .section-box.box-06 {
+    background-image: url(../images_self_reliance/story_06.jpg); 
+    z-index: 1;
+}
+
+.campaign-wrap .section.story .section-box .section-box-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campaign-wrap .section.story .section-box.section-box:not(.box-06) .section-box-inner {   
+    display: flex;
+}
+
+.campaign-wrap .section.story .section-box:nth-child(odd):not(.box-06) .section-box-inner {
+    justify-content: flex-end;
+}
+
+.campaign-wrap .section.story .section-box.box-01 .section-box-inner {
+    padding: 220px 0 294px 0;
+}
+
+.campaign-wrap .section.story .section-box.box-02 .section-box-inner {
+    padding: 284px 0 530px 0;
+}
+
+.campaign-wrap .section.story .section-box.box-03 .section-box-inner {
+    padding: 292px 0 264px 0;
+}
+
+.campaign-wrap .section.story .section-box.box-04 .section-box-inner {
+    padding: 129px 0 190px 0;
+}
+
+.campaign-wrap .section.story .section-box.box-05 .section-box-inner {
+    padding: 260px 0 330px 0;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner {
+    padding: 124px 0 191px 0;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 50px;
+}
+
+.campaign-wrap .section.story .section-box.box-05 .section-box-inner .txt-box {
+    padding-right: 50px;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:first-child .comma {
+    position: relative;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:first-child .comma::before, 
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:last-child .comma::after {    
+    display: inline-block;
+    font-size: 104px;  
+    color: #8d8070;
+    opacity: 0.2;    
+    vertical-align: top; 
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:first-child .comma::before {
+    content: '“';
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    font-weight: 400;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:last-child .comma::after {
+    content: '”';
+    position: absolute;
+    bottom: -50px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt + .txt {
+    padding-top: 16px;
+}
+
+.campaign-wrap .section .txt-box .title .wbr,
+.campaign-wrap .section .txt-box .txt .wbr  {
+    display: block;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt .accent {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt .highlight {
+    color: #fff;    
+    background: linear-gradient( transparent 50%, rgba(255, 255, 255, 0.12) 50%);
+}
+
+
+/* .section-box.box-01 */
+.campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt {
+    line-height: 34px;
+    font-weight: 400;
+    color: #332817;
+}
+
+.campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt .accent {  
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 800;      
+    color: #111;
+}
+
+.campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt:last-child > span:last-child {
+    line-height: 36px;
+    font-weight: 800;
+}
+
+.campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt .highlight { 
+    color: #111;    
+    background: linear-gradient( transparent 50%, rgba(79, 52, 13, 0.12) 50%);
+}
+
+.campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt .accent{      
+    background: linear-gradient(90deg, rgba(51,36,16,1) 0%, rgba(100,65,16,1) 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {    
+    .campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt .accent {
+        color: rgba(100,65,16,1);
+        background: transparent;
+    }
+}
+
+/* .section-box.box-02 */
+.campaign-wrap .section .section-box.box-02 .txt-box .variable-wbr-wrap > .br {
+    display: none;
+}
+
+.campaign-wrap .section .section-box.box-02 .txt-box .variable-wbr-wrap + span {
+    display: block;
+}
+
+/* .section-box.box-04 */
+.campaign-wrap .section.story .section-box.box-04 .section-box-inner .txt-box .txt:last-child > span:last-child {
+    line-height: 42px;
+    font-weight: 800;
+    color: #fff;
+}
+
+/* .section-box.box-05 */
+.campaign-wrap .section.story .section-box.box-05 .section-box-inner .txt-box .txt .highlight { 
+    color: #f36f21;
+}
+
+/* .section-box.box-06 */
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box {
+    text-align: center;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .title {
+    padding-bottom: 350px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .title .small {
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    color: #d6cfc7;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .br {
+    display: none;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .accent {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 500;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .highlight {
+    position:relative;
+    font-weight: 600;    
+    background: linear-gradient(90deg, rgba(255,134,53,1) 0%, rgba(255,91,9,1) 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .highlight {
+        color: rgba(255,91,9,1);
+        background: transparent;
+    }
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .highlight::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, rgba(255,134,53,1) 0%, rgba(255,91,9,1) 100%);
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .btn-area {
+    padding: 35px 0 84px 0;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .info-box {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #d6cfc7;
+    text-align: center;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .info-box .wbr {
+    display: block;
+}
+
+.campaign-wrap .section.story .section-box.box-06 .section-box-inner .info-box .wbr .br {
+    display: none;
+}
+
+/* .section.support-business */
+.campaign-wrap .section.support-business {
+    margin-top: -156px;
+    background-image: url(../images_self_reliance/support-business.png);
+    z-index: 2;
+}
+
+.campaign-wrap .section.support-business .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1226px;
+    padding: 195px 0 120px 0;
+}
+
+.campaign-wrap .section.support-business .section-inner .txt-box:first-child .title,
+.campaign-wrap .section.support-case .section-inner .txt-box:first-child .title {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #111111;
+    text-align: center;
+}
+
+.campaign-wrap .section.support-business .txt-box .variable-wbr-wrap > span {
+    display: inline-block;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display {    
+    width: 100%;
+    padding-top: 80px;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li {
+    position: relative;
+    float: left;
+    width: calc(33.3333% - 26px);
+    margin: 13px;
+    border-radius: 4px;
+    -webkit-box-shadow: 10px 10px 40px 0px rgba(40, 36, 35, 0.2); 
+    box-shadow: 10px 10px 40px 0px rgba(40, 36, 35, 0.2);
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li:nth-child(2) {
+    transform: translateY(40px);
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .img-box {
+    width: 100%;
+    height: 280px;
+    border-radius: 4px 4px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li:nth-child(1) .img-box {
+    background-image: url(../images_self_reliance/support-business-01.jpg);
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li:nth-child(2) .img-box {
+    background-image: url(../images_self_reliance/support-business-02.jpg);
+} 
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li:nth-child(3) .img-box {
+    background-image: url(../images_self_reliance/support-business-03.jpg);
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px 0 44px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box h5.title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #f37021;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box .txt {
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #222222;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box .txt .br {
+    display: none;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box .txt .accent {    
+    font-weight: 700;
+}
+
+.campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box .txt .highlight {      
+    background: linear-gradient( transparent 50%, rgba(243, 114, 33, 0.14) 50%);
+}
+
+/* .section.support-case */
+.campaign-wrap .section.support-case {
+    background-color: #faf5eb;
+    z-index: 2;
+}
+
+.campaign-wrap .section.support-case .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 100px 0;
+}
+
+.campaign-wrap .section.support-case .section-inner .txt-box:first-child .title .accent {
+    color: #f37021;
+}
+
+.campaign-wrap .section.support-case .txt-box .title .variable-wbr-wrap > span {
+    display: inline-block;
+}
+
+.campaign-wrap .section.support-case .section-inner .support-case-display {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 80px 50px 80px;
+    box-sizing: border-box;
+}
+
+/* swiper-slider */
+.campaign-wrap .section.support-case .section-inner .support-case-display .swiper-container {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+.swiper-slide img {
+    vertical-align: top;
+}
+
+.campaign-wrap .section.support-case .section-inner .support-case-display .swiper-slide img.mobile {
+    display: none;
+}
+
+.support-case-display .swiper-pagination-bullets,
+.support-case-display, .swiper-pagination-fraction {
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: #f37021;
+    opacity: .4;
+    transition: width .4s ease-in-out;
+}
+
+.support-case-display .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 70px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image:url(../images_self_reliance/icon-arrow-prev.png);
+    left: 0;
+    right: auto;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url(../images_self_reliance/icon-arrow-next.png);
+    right: 0;
+    left: auto;
+}
+.swiper-pagination-bullet-active {
+    width: 40px;
+    opacity: 1;
+    background: #f37021;
+}
+
+.campaign-wrap .section.copyright {    
+    background-color: #66635f;
+}
+
+.campaign-wrap .section.copyright .section-inner {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+/* button */
+a.normal-btn {   
+    display: inline-flex;    
+    align-items: center;
+    position: relative;
+    height: 88px;
+    line-height: 46px;
+    background-color: #ff6600;
+    border-radius: 44px;    
+    color: #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: background-color .4s ease-in-out;
+    text-decoration: none;
+}
+
+a.normal-btn:hover {
+    background-color: #e55309;
+}
+
+a.normal-btn .btn-text { 
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+    padding: 0 24px 0 42px;    
+    font-weight: 700;     
+    font-size: 32px; 
+    line-height: 46px; 
+}
+
+a.normal-btn .btn-text:after {
+    content: "";
+    display: block;
+    width: 46px;
+    min-width: 46px;
+    height: 46px;
+    margin-left: 4px;
+    background-image: url(../images_self_reliance/icon-chevron-right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Responsive  */
+@media screen and ( max-width: 1280px ) {   
+
+    .campaign-wrap .section .section-inner {
+        max-width: 100%;
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+   
+    .campaign-wrap .section.story .section-box .section-box-inner {
+        max-width: 100%;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        box-sizing: border-box;
+    }
+
+    .campaign-wrap .section.support-business .section-inner {
+        max-width: 1200px;
+    }    
+}
+
+@media screen and ( max-width: 1023px ) {
+    .campaign-wrap .section.visual {        
+        background:#181818 url(../images_self_reliance/mo-visual.jpg) no-repeat;
+        background-position: center -16vw;
+        background-size: cover;
+    }
+
+    .campaign-wrap .section.visual .section-inner .visual-title {   
+        align-items: center;    
+        text-align: center;   
+    }
+
+    .campaign-wrap .section .section-inner .visual-title .btn-area {
+        margin: 460px 0 40px 0;
+    }
+    
+    .campaign-wrap .section.visual .section-inner .visual-title .txt-box .sort.variable-wbr-wrap > span:last-child {
+        display: block;
+    }   
+
+    .campaign-wrap .section .section-inner .visual-title .info-box dt {       
+        text-align: left;
+    }
+
+    .campaign-wrap .section .section-inner .visual-title .info-box dd {        
+        text-align: left;
+    }
+}
+
+@media screen and ( max-width: 767px ) {
+    .campaign-wrap {
+        letter-spacing: -0.01em;
+    }
+
+    /* .quick-menu-btn */
+    .quick-menu-btn {
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 5px 44px 5px;
+    }
+
+    .quick-menu-btn a {  
+        width: 350px;
+        height: 60px;
+        background: url(../images_self_reliance/mo-quick-menu-01.jpg) no-repeat;
+        background-size: cover ;
+    }
+
+    .campaign-wrap .section .section-inner {
+        padding: 0 20px;
+    }
+
+    /* .section.visual */
+    .campaign-wrap .section.visual {    
+        background-size: cover;
+        background-position: center bottom 100px;
+    }   
+
+    .campaign-wrap .section.visual .section-inner .visual-title {
+        padding: 40px 0 70px 0;
+    } 
+
+    .campaign-wrap .section .section-inner .visual-title .btn-area {
+        margin: 240px 0 20px 0;
+    }
+
+    .campaign-wrap .section.visual .section-inner .visual-title .txt-box .sort {        
+        font-size: 16px;
+        line-height: 22px;
+    }   
+
+    .campaign-wrap .section.visual .section-inner .visual-title .txt-box .title {
+        width: 202px;
+        margin: 12px auto;
+    }
+
+    .campaign-wrap .section.visual .section-inner .visual-title .txt-box .title img {
+        width: 100%;
+    }
+
+    .campaign-wrap .section.visual .section-inner .visual-title .txt-box .txt {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .campaign-wrap .section .section-inner .visual-title .info-box dt {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .campaign-wrap .section .section-inner .visual-title .info-box dd {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .campaign-wrap .section .section-inner .visual-title .info-box dd + dd {
+        margin-top: 5px;
+    }
+
+    .campaign-wrap .section .section-inner .visual-video .video-inner .info-box {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 15px 0 40px;
+    }
+
+    .campaign-wrap .section .section-inner .visual-video .video-inner .info-box .br {
+        display: block;
+    }  
+
+    /* .section.story */   
+
+    .campaign-wrap .section.story .section-box .section-box-inner {
+        padding-left: 20px !important;
+        padding-right: 20px !important;        
+    }
+
+    .campaign-wrap .section.story .section-box:not(.box-05) .section-box-inner,
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner {
+        justify-content: flex-start !important;
+    }
+
+    .campaign-wrap .section.story .section-box.box-05 .section-box-inner,
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner {          
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .campaign-wrap .section.story .section-box.box-01 {
+        background-image: url(../images_self_reliance/mo_story_01.png);
+        z-index: 3;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-02 {
+        margin-top: -50px;
+        background-image: url(../images_self_reliance/mo_story_02.png);
+        z-index: 2; 
+    }
+    
+    .campaign-wrap .section.story .section-box.box-03 {
+        margin-top: -50px;
+        background-image: url(../images_self_reliance/mo_story_03.jpg);
+        z-index: 1; 
+    }
+    
+    .campaign-wrap .section.story .section-box.box-04 {
+        background-image: url(../images_self_reliance/mo_story_04.jpg);
+        z-index: 1; 
+    }
+    
+    .campaign-wrap .section.story .section-box.box-05 {
+        background-image: url(../images_self_reliance/mo_story_05.jpg);
+        z-index: 1; 
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 {
+        background-image: url(../images_self_reliance/mo_story_06.jpg); 
+        z-index: 1;
+    }    
+
+    .campaign-wrap .section.support-business {
+        margin-top: -20px;
+        background-image: url(../images_self_reliance/mo-support-business.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+
+    .campaign-wrap .section.story .section-box.box-01 .section-box-inner {
+        padding: 255px 0 90px 0;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-02 .section-box-inner {
+        padding: 100px 0 330px 0;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-03 .section-box-inner {
+        padding: 100px 0 350px 0;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-04 .section-box-inner {
+        padding: 40px 0 270px 0;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-05 .section-box-inner {
+        padding: 40px 0 270px 0;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner {
+        padding: 35px 0 40px 0;
+    }    
+
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box {        
+        padding-left: 25px;
+    }
+
+    .campaign-wrap .section.story .section-box.box-05 .section-box-inner .txt-box  {        
+        padding: 0 25px;
+    }
+    
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:first-child .comma::before, 
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:last-child .comma::after {    
+       font-size: 52px; 
+    }
+    
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:first-child .comma::before {
+        top: 15px;
+        left: -30px;
+    }
+    
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt:last-child .comma::after {
+        bottom: -25px;
+        margin-left: 7px;
+    }
+
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt {       
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .campaign-wrap .section.story .section-box:not(.box-06) .section-box-inner .txt-box .txt .accent {
+        font-size: 18px;
+        line-height: 24px;
+    }  
+    
+    /* .section-box.box-01 */
+    .campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt .accent {  
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-01 .section-box-inner .txt-box .txt:last-child > span:last-child {
+        font-size: 14px;
+        line-height: 19px;
+    }   
+    
+    /* .section-box.box-02 */
+    .campaign-wrap .section .section-box.box-02 .txt-box .variable-wbr-wrap > .br {
+        display: block;
+    }
+
+    .campaign-wrap .section .section-box.box-02 .txt-box .variable-wbr-wrap {
+        background: none !important;
+    }
+   
+    .campaign-wrap .section .section-box.box-02 .txt-box .variable-wbr-wrap > span {        
+        color: #fff;
+        background: linear-gradient( transparent 50%, rgba(255, 255, 255, 0.12) 50%);
+    }
+    
+    /* .section-box.box-04 */
+    .campaign-wrap .section.story .section-box.box-04 .section-box-inner .txt-box .txt:last-child > span:last-child {
+        font-size: 14px;
+        line-height: 21px;
+    }   
+    
+    /* .section-box.box-06 */
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .title {
+        padding-bottom: 145px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .title .small {
+        margin-top: 8px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .br {
+        display: block;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .accent {
+        font-size: 18px;
+        line-height: 24px;
+    }  
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .txt-box .txt .highlight::after {     
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;        
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .btn-area {
+        padding: 20px 0 37px 0;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .info-box {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+    .campaign-wrap .section.story .section-box.box-06 .section-box-inner .info-box .wbr .br {
+        display: block;
+    }
+    
+    /* .section.support-business */
+    .campaign-wrap .section.support-business .section-inner {
+        max-width: 100%;
+        padding: 80px 20px 60px 20px;
+    }
+    
+    .campaign-wrap .section.support-business .section-inner .txt-box:first-child .title,
+    .campaign-wrap .section.support-case .section-inner .txt-box:first-child .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .campaign-wrap .section.support-business .txt-box .variable-wbr-wrap > span {
+        display: block;
+    }
+
+    .campaign-wrap .section.support-business .section-inner .support-business-display {       
+        padding-top: 40px;
+    }
+
+    .campaign-wrap .section.support-business .section-inner .support-business-display li {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .campaign-wrap .section.support-business .section-inner .support-business-display li + li {
+        margin-top: 20px;
+    } 
+    
+    .campaign-wrap .section.support-business .section-inner .support-business-display li:nth-child(2) {
+        transform: translateY(0);
+    }
+    
+    .campaign-wrap .section.support-business .section-inner .support-business-display li .img-box {
+        height: 210px;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box {        
+        padding: 24px 0;
+    }
+    
+    .campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box h5.title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box .txt  {
+        padding-top: 14px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .campaign-wrap .section.support-business .section-inner .support-business-display li .txt-box .txt .br {
+        display: block;
+    }
+
+    /* .section.support-case */
+    .campaign-wrap .section.support-case .section-inner {       
+        padding: 50px 0 76px 0;
+    }
+
+    .campaign-wrap .section.support-case .txt-box .title .variable-wbr-wrap > span {
+        display: block;
+    }
+
+    
+    .campaign-wrap .section.support-case .section-inner .support-case-display .swiper-slide img.mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .campaign-wrap .section.support-case .section-inner .support-case-display .swiper-slide img.pc {
+        display: none;
+    }
+
+    .swiper-container {        
+        overflow: initial;
+    }
+
+    .campaign-wrap .section.support-case .section-inner .support-case-display {       
+        padding: 40px 30px 0 30px;
+        overflow: hidden;
+    }
+
+    .swiper-pagination,
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    /* .section.copyright */
+    .campaign-wrap .section.copyright .section-inner {        
+        height: 36px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    /* button */
+    a.normal-btn {           
+        height: 45px;
+        line-height: 45px;
+        border-radius: 24px;
+    }
+
+    a.normal-btn .btn-text {
+        padding: 0 10px 0 20px;  
+        font-size: 18px; 
+        line-height: 20px; 
+    }
+
+    a.normal-btn .btn-text:after {     
+        width: 26px;
+        min-width: 26px;
+        height: 26px;
+        margin-left: 4px;
+        background-image: url(../images_self_reliance/icon-chevron-right.png);
+    }
+}
+
+@media screen and ( max-width: 479px ) {
+    .campaign-wrap .section.visual {                
+        background-position: center top;
+        background-size: 100%;
+    } 
+}
+
+@media screen and (max-width: 349px) {
+    /* .quick-menu-btn */
+    .quick-menu-btn a {  
+        width: 310px;
+        height: 53px;
+        background: url(../images_self_reliance/mo-quick-menu-01.jpg) no-repeat;
+        background-size: cover ;
+    }
+}
+
+/* ani-mation*/
+@keyframes show-up {
+    from {transform: translate3d(0, 100px, 0); opacity: 0;}
+    to {transform: translate3d(0, 0, 0); opacity: 1;}
+}
+
+@keyframes show-left {
+    from {transform: translate3d(100px, 0, 0); opacity: 0;}
+    to {transform: translate3d(0, 0, 0); opacity: 1;}
+}
+
+@keyframes show-right {
+    from {transform: translate3d(-100px, 0, 0); opacity: 0;}
+    to {transform: translate3d(0, 0, 0); opacity: 1;}
+}
+
+.section.visual .scroll-event.on,
+.section.story .section-box.box-06 .scroll-event.on {
+    animation-name: show-up;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.section.story .section-box:nth-child(odd):not(.box-06) .scroll-event.on {
+    animation-name: show-left;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.section.story .section-box:nth-child(even):not(.box-06) .scroll-event.on {
+    animation-name: show-right;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.section.support-business .scroll-event.on {
+    animation-name: show-up;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+}
+
+.delay-01 {animation-delay:0.1s;} 
+.delay-02 {animation-delay:0.2s;} 
+.delay-03 {animation-delay:0.3s;} 
+.delay-04 {animation-delay:0.4s;} 
+.delay-05 {animation-delay:0.5s;} 
+.delay-06 {animation-delay:0.6s;} 
+.delay-07 {animation-delay:0.7s;} 
+.delay-08 {animation-delay:0.8s;} 
+.delay-09 {animation-delay:0.9s;} 
+.delay-10 {animation-delay:0.10s;} 
+
+
+
+
+
+
+
+
