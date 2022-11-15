@@ -12,12 +12,14 @@
     <meta property="og:description" content="책임감있는 퍼블리셔 신민철입니다.">
     <meta property="og:site_name" content="Cheoli's Porfolio">
     <title>Cheoli's Portfolio</title>
+
     <link rel="shortcut icon" href="./img/favicon.png">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -116,7 +118,7 @@
                                         </div>
                                     </div>
                                     <!-- section-intro -->
-                                    <div class="section intro">
+                                    <div class="section intro" id="introduce">
                                         <div class="section-wrap">
                                             <div class="section-head">
                                                 <h4 class="section-subject"><span class="section-name">Self-Introduce</span></h4>
@@ -127,7 +129,7 @@
                                             </div>
                                             <div class="section-body">
 
-                                                <!-- <div class="subsection profile scroll-spy" id="introduce">
+                                                <!-- <div class="subsection profile scroll-spy">
                                                     <div class="subsection-wrap">
                                                         <div class="subsection-head">
                                                             <h5 class="subsection-subject"><span class="subsection-name">Profile</span></h5>
@@ -948,35 +950,31 @@
         });
     </script>
 
-    <!-- script-section -->
     <script>
         const btnHome = document.querySelector('.main');
         const sectionHome = document.querySelector('#main');
         btnHome.addEventListener('click', function () {
         sectionHome.scrollIntoView({behavior:"smooth", block:"center"});
-        }
-        );
+        });
+
         const btnAbout = document.querySelector('.intro');
         const sectionAbout = document.querySelector('#introduce');
         btnAbout.addEventListener('click', function () {
         sectionAbout.scrollIntoView({behavior:"smooth", block:"center"});
-        }
-        );
+        });
+
         const btnSkills = document.querySelector('.product');
         const sectionSkills = document.querySelector('#product');
         btnSkills.addEventListener('click', function () {
         sectionSkills.scrollIntoView({behavior:"smooth", block:"center"});
         });
-        const btnProduct = document.querySelector('.products');
-        const sectionProduct = document.querySelector('#product');
-        btnProduct.addEventListener('click', function () {
-        sectionProduct.scrollIntoView({behavior:"smooth", block:"center"});
-        });
+
         const btnWorks = document.querySelector('.graphic');
         const sectionWorks = document.querySelector('#graphic');
         btnWorks.addEventListener('click', function () {
         sectionWorks.scrollIntoView({behavior:"smooth", block:"center"});
         });
+
         const btncontact = document.querySelector('.contact');
         const sectioncontact = document.querySelector('#footer');
         btncontact.addEventListener('click', function () {
@@ -996,6 +994,7 @@
         //     }
         // })
     </script>
+
     <script>
         //팝업 띄우기
         function openPop_1() {
@@ -1067,6 +1066,7 @@
             document.getElementById("popupLayer_6").style.display = "none";
         }
     </script>
+
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {
@@ -1088,6 +1088,7 @@
             })
         })
         </script>
+
         <script>
             const spyEls = document.querySelectorAll(".scroll-spy");
             const controller = new ScrollMagic.Controller();
